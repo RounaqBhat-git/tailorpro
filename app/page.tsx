@@ -1,3 +1,6 @@
+"use client";
+
+import { useState, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import TestimonialsScroll from "@/components/TestimonialsScroll";
@@ -9,27 +12,151 @@ const categories = [
     label: "Women's Wear",
     sub: "Anarkalis, Suits & Sarees",
     image: "/cat-womens-wear.jpg",
-    position: "center 15%",
+    position: "center 20%",
   },
   {
     label: "Bridal",
     sub: "Crafted for your biggest day",
     image: "/cat-bridal.jpg",
-    position: "center 10%",
+    position: "center 25%",
   },
   {
     label: "Pherans",
     sub: "Kashmir's signature garment",
     image: "/cat-pheran.jpg",
-    position: "center top",
+    position: "center 20%",
   },
   {
     label: "Men's Wear",
     sub: "Sherwanis & Pathani Sets",
     image: "/cat-mens-wear.jpg",
-    position: "center 20%",
+    position: "center 15%",
+  },
+  {
+    label: "Kids Wear",
+    sub: "Festive & Occasion Outfits",
+    image: "/cat-kids-wear.jpg",
+    position: "35% center",
   },
 ];
+
+const catalogItems: Record<string, Array<{ id: string; title: string; price: string; image: string; tag?: string }>> = {
+  "Women's Wear": [
+    {
+      id: "w1",
+      title: "Anarkali Kurta",
+      price: "₹1,200",
+      image: "/anarkali-kurta.png",
+      tag: "Stitching",
+    },
+    {
+      id: "w2",
+      title: "Straight Kurta",
+      price: "₹850",
+      image: "/straight-kurta.png",
+      tag: "Stitching",
+    },
+    {
+      id: "w3",
+      title: "A-Line Suit Set",
+      price: "₹950",
+      image: "/aline-suit-set.png",
+      tag: "Stitching",
+    },
+  ],
+  "Bridal": [
+    {
+      id: "b1",
+      title: "Lehenga Choli Set",
+      price: "₹15,500",
+      image: "/lehenga-choli-set.png",
+      tag: "Custom Fit",
+    },
+    {
+      id: "b2",
+      title: "Ghagra Choli Set",
+      price: "₹12,800",
+      image: "/ghagra-choli-set.jpg",
+      tag: "Bespoke",
+    },
+    {
+      id: "b3",
+      title: "Customized Saree",
+      price: "₹8,500",
+      image: "/customized-saree.png",
+      tag: "Handcrafted",
+    },
+  ],
+  "Pherans": [
+    {
+      id: "p1",
+      title: "Aari Work Pheran",
+      price: "₹2,800",
+      image: "/aari-work-pheran.png",
+      tag: "Stitching",
+    },
+    {
+      id: "p2",
+      title: "Tilla Work Pheran",
+      price: "₹3,400",
+      image: "/tilla-work-pheran.png",
+      tag: "Artisan",
+    },
+    {
+      id: "p3",
+      title: "Short Pheran",
+      price: "₹2,200",
+      image: "/short-pheran.png",
+      tag: "Custom Fit",
+    },
+  ],
+  "Men's Wear": [
+    {
+      id: "m1",
+      title: "Straight Kurta",
+      price: "₹600",
+      image: "/mens-straight-kurta.png",
+      tag: "Stitching",
+    },
+    {
+      id: "m2",
+      title: "Pathani Kurta",
+      price: "₹720",
+      image: "/mens-pathani-kurta.png",
+      tag: "Stitching",
+    },
+    {
+      id: "m3",
+      title: "Short Kurta",
+      price: "₹500",
+      image: "/mens-short-kurta.png",
+      tag: "Stitching",
+    },
+  ],
+  "Kids Wear": [
+    {
+      id: "k1",
+      title: "Girls Anarkali Suit Set",
+      price: "₹900",
+      image: "/kids-anarkali-suit.png",
+      tag: "Stitching",
+    },
+    {
+      id: "k2",
+      title: "Girls Kurti & Sharara Set",
+      price: "₹1,000",
+      image: "/kids-sharara-set.png",
+      tag: "Stitching",
+    },
+    {
+      id: "k3",
+      title: "Boys Kurta Pajama Set",
+      price: "₹650",
+      image: "/boys-kurta-pajama.png",
+      tag: "Stitching",
+    },
+  ],
+};
 
 
 const processSteps = [
@@ -59,6 +186,32 @@ const processSteps = [
 // ─── Page ────────────────────────────────────────────────────────────────────
 
 export default function HomePage() {
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [favorites, setFavorites] = useState<Record<string, boolean>>({});
+  const carouselRef = useRef<HTMLDivElement>(null);
+
+  const toggleFavorite = (id: string, e: React.MouseEvent) => {
+    e.stopPropagation();
+    setFavorites((prev) => ({ ...prev, [id]: !prev[id] }));
+  };
+
+  const handleCategoryClick = (catLabel: string) => {
+    setSelectedCategory(catLabel);
+    setTimeout(() => {
+      const elem = document.getElementById("featured-collection");
+      if (elem) {
+        elem.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 50);
+  };
+
+  const scrollCarousel = (direction: "left" | "right") => {
+    if (carouselRef.current) {
+      const amount = direction === "left" ? -320 : 320;
+      carouselRef.current.scrollBy({ left: amount, behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       {/* ══════════════════════════════════════════
@@ -344,68 +497,369 @@ export default function HomePage() {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
-              gap: 20,
+              gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))",
+              gap: 16,
             }}
           >
-            {categories.map((cat) => (
-              <div
-                key={cat.label}
-                className="lift"
-                style={{
-                  position: "relative",
-                  height: 380,
-                  borderRadius: 20,
-                  overflow: "hidden",
-                  cursor: "pointer",
-                }}
-              >
+            {categories.map((cat) => {
+              const isSelected = selectedCategory === cat.label;
+              return (
                 <div
+                  key={cat.label}
+                  onClick={() => handleCategoryClick(cat.label)}
+                  className="lift"
                   style={{
-                    position: "absolute",
-                    inset: 0,
-                    backgroundImage: `url(${cat.image})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: cat.position,
-                    transition: "transform 0.4s",
-                  }}
-                />
-                <div
-                  style={{
-                    position: "absolute",
-                    inset: 0,
-                    background:
-                      "linear-gradient(to top, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.1) 55%, rgba(0,0,0,0) 100%)",
-                  }}
-                />
-                <div
-                  style={{
-                    position: "absolute",
-                    bottom: 0,
-                    left: 0,
-                    right: 0,
-                    padding: "28px 24px",
+                    position: "relative",
+                    height: 260,
+                    borderRadius: 16,
+                    overflow: "hidden",
+                    cursor: "pointer",
+                    border: isSelected ? "2px solid #c9a84c" : "1px solid transparent",
+                    transition: "all 0.3s ease",
                   }}
                 >
                   <div
-                    className="font-serif"
-                    style={{ fontSize: 22, fontWeight: 700, color: "#fff", marginBottom: 4 }}
+                    style={{
+                      position: "absolute",
+                      inset: 0,
+                      backgroundImage: `url(${cat.image})`,
+                      backgroundSize: "cover",
+                      backgroundPosition: cat.position,
+                      transition: "transform 0.4s",
+                    }}
+                  />
+                  <div
+                    style={{
+                      position: "absolute",
+                      inset: 0,
+                      background:
+                        "linear-gradient(to top, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.15) 60%, rgba(0,0,0,0) 100%)",
+                    }}
+                  />
+                  <div
+                    style={{
+                      position: "absolute",
+                      bottom: 0,
+                      left: 0,
+                      right: 0,
+                      padding: "18px 16px",
+                    }}
                   >
-                    {cat.label}
+                    <div
+                      className="font-serif"
+                      style={{ fontSize: 18, fontWeight: 700, color: "#fff", marginBottom: 3 }}
+                    >
+                      {cat.label}
+                    </div>
+                    <div style={{ fontSize: 11, color: "rgba(255,255,255,0.75)" }}>{cat.sub}</div>
                   </div>
-                  <div style={{ fontSize: 12, color: "rgba(255,255,255,0.65)" }}>{cat.sub}</div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
-          <div style={{ textAlign: "center", marginTop: 48 }}>
+          <div style={{ textAlign: "center", marginTop: 44 }}>
             <Link href="/download" className="btn-gold">
               Explore All In App
             </Link>
           </div>
         </div>
       </section>
+
+      {/* ══════════════════════════════════════════
+          FEATURED COLLECTION — INLINE GALLERY
+      ══════════════════════════════════════════ */}
+      {selectedCategory && (
+        <section id="featured-collection" style={{ background: "#fcfaf7", padding: "64px 0", borderTop: "1px solid #f0ece1" }}>
+          <div className="section" style={{ maxWidth: 1140, margin: "0 auto" }}>
+            {/* Header & Category Filter Pills */}
+            <div style={{ position: "relative", textAlign: "center", marginBottom: 36 }}>
+              {/* Circular Cross Close Button */}
+              <button
+                onClick={() => setSelectedCategory(null)}
+                aria-label="Close collection"
+                title="Close collection"
+                style={{
+                  position: "absolute",
+                  top: -10,
+                  right: 0,
+                  width: 36,
+                  height: 36,
+                  borderRadius: "50%",
+                  background: "#ffffff",
+                  border: "1px solid #e0d7c6",
+                  color: "#444",
+                  fontSize: 16,
+                  fontWeight: "bold",
+                  cursor: "pointer",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  boxShadow: "0 2px 10px rgba(0,0,0,0.08)",
+                  transition: "all 0.2s ease",
+                  zIndex: 10,
+                }}
+              >
+                ✕
+              </button>
+
+              <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.18em", color: "#c9a84c", marginBottom: 10 }}>
+                ✦ &nbsp; FEATURED COLLECTION &nbsp; ✦
+              </div>
+              <h2
+                className="font-serif"
+                style={{ fontSize: "clamp(24px, 3.2vw, 36px)", fontWeight: 700, color: "#2c2c2c", marginBottom: 24 }}
+              >
+                Popular Designs for Custom Stitching
+              </h2>
+
+              {/* Category Filter Pills */}
+              <div
+                style={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  justifyContent: "center",
+                  gap: 10,
+                  maxWidth: 720,
+                  margin: "0 auto",
+                }}
+              >
+                {categories.map((cat) => {
+                  const isActive = selectedCategory === cat.label;
+                  return (
+                    <button
+                      key={cat.label}
+                      onClick={() => handleCategoryClick(cat.label)}
+                      style={{
+                        padding: "9px 22px",
+                        borderRadius: 30,
+                        fontSize: 13,
+                        fontWeight: 600,
+                        cursor: "pointer",
+                        transition: "all 0.25s ease",
+                        border: isActive ? "1px solid #c9a84c" : "1px solid #e2ded5",
+                        background: isActive ? "#c9a84c" : "#ffffff",
+                        color: isActive ? "#ffffff" : "#555555",
+                        boxShadow: isActive ? "0 4px 14px rgba(201,168,76,0.3)" : "0 2px 6px rgba(0,0,0,0.03)",
+                      }}
+                    >
+                      {cat.label}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+          {/* Carousel Track with Side Scroll Buttons */}
+          <div style={{ position: "relative", maxWidth: 940, margin: "0 auto", padding: "0 48px" }}>
+            {/* Left Scroll Arrow */}
+            <button
+              onClick={() => scrollCarousel("left")}
+              aria-label="Scroll left"
+              style={{
+                position: "absolute",
+                left: 0,
+                top: "45%",
+                transform: "translateY(-50%)",
+                zIndex: 20,
+                width: 40,
+                height: 40,
+                borderRadius: "50%",
+                border: "1px solid #e0d7c6",
+                background: "#ffffff",
+                color: "#2c2c2c",
+                fontSize: 22,
+                fontWeight: 600,
+                cursor: "pointer",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                boxShadow: "0 4px 14px rgba(0,0,0,0.12)",
+                transition: "all 0.2s ease",
+              }}
+            >
+              ‹
+            </button>
+
+            {/* Product Cards Track */}
+            <div
+              ref={carouselRef}
+              className="no-scrollbar"
+              style={{
+                display: "flex",
+                gap: 20,
+                justifyContent: "center",
+                overflowX: "auto",
+                scrollBehavior: "smooth",
+                padding: "8px 4px 20px 4px",
+                width: "100%",
+              }}
+            >
+              {(catalogItems[selectedCategory || "Women's Wear"] || []).map((item) => {
+                const isFav = !!favorites[item.id];
+                return (
+                  <div
+                    key={item.id}
+                    className="lift"
+                    style={{
+                      minWidth: 245,
+                      width: 245,
+                      background: "#ffffff",
+                      borderRadius: 20,
+                      border: "1px solid #f0ece1",
+                      padding: 12,
+                      boxShadow: "0 8px 24px rgba(0,0,0,0.04)",
+                      flexShrink: 0,
+                      cursor: "pointer",
+                    }}
+                  >
+                    {/* Image Box */}
+                    <div
+                      style={{
+                        position: "relative",
+                        height: 250,
+                        borderRadius: 14,
+                        overflow: "hidden",
+                        backgroundImage: `url(${item.image})`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center top",
+                      }}
+                    >
+                      {/* Stitching Badge */}
+                      <div
+                        style={{
+                          position: "absolute",
+                          bottom: 10,
+                          left: 10,
+                          background: "rgba(35,30,25,0.8)",
+                          backdropFilter: "blur(6px)",
+                          color: "#ffffff",
+                          fontSize: 11,
+                          fontWeight: 600,
+                          padding: "5px 11px",
+                          borderRadius: 8,
+                          display: "flex",
+                          alignItems: "center",
+                          gap: 5,
+                        }}
+                      >
+                        <span style={{ fontSize: 11, color: "#c9a84c" }}>⚒</span>
+                        {item.tag || "Stitching"}
+                      </div>
+
+                      {/* Heart Button */}
+                      <button
+                        onClick={(e) => toggleFavorite(item.id, e)}
+                        aria-label="Favorite design"
+                        style={{
+                          position: "absolute",
+                          top: 10,
+                          right: 10,
+                          width: 32,
+                          height: 32,
+                          borderRadius: "50%",
+                          background: "#ffffff",
+                          border: "none",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
+                          cursor: "pointer",
+                        }}
+                      >
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill={isFav ? "#e63946" : "none"}
+                          stroke={isFav ? "#e63946" : "#666"}
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                        </svg>
+                      </button>
+                    </div>
+
+                    {/* Meta info */}
+                    <div style={{ marginTop: 12, padding: "0 4px 4px" }}>
+                      <div
+                        className="font-serif"
+                        style={{
+                          fontSize: 15,
+                          fontWeight: 600,
+                          color: "#2c2c2c",
+                          marginBottom: 4,
+                          whiteSpace: "nowrap",
+                          overflow: "hidden",
+                          textOverflow: "ellipsis",
+                        }}
+                      >
+                        {item.title}
+                      </div>
+                      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+                        <div
+                          style={{
+                            fontSize: 14,
+                            fontWeight: 700,
+                            color: "#c9a84c",
+                          }}
+                        >
+                          {item.price}
+                        </div>
+                        <div
+                          style={{
+                            fontSize: 10,
+                            fontWeight: 700,
+                            color: "#2d6a4f",
+                            background: "#e8f5e9",
+                            padding: "3px 7px",
+                            borderRadius: 5,
+                            letterSpacing: "0.04em",
+                          }}
+                        >
+                          CUSTOM FIT
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* Right Scroll Arrow */}
+            <button
+              onClick={() => scrollCarousel("right")}
+              aria-label="Scroll right"
+              style={{
+                position: "absolute",
+                right: 0,
+                top: "45%",
+                transform: "translateY(-50%)",
+                zIndex: 20,
+                width: 40,
+                height: 40,
+                borderRadius: "50%",
+                border: "1px solid #e0d7c6",
+                background: "#ffffff",
+                color: "#2c2c2c",
+                fontSize: 22,
+                fontWeight: 600,
+                cursor: "pointer",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                boxShadow: "0 4px 14px rgba(0,0,0,0.12)",
+                transition: "all 0.2s ease",
+              }}
+            >
+              ›
+            </button>
+          </div>
+        </div>
+      </section>
+      )}
 
       {/* ══════════════════════════════════════════
           BRIDAL FEATURE — full-bleed editorial
@@ -415,10 +869,9 @@ export default function HomePage() {
           style={{
             position: "absolute",
             inset: 0,
-            backgroundImage:
-              "url(https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=1600&q=85)",
+            backgroundImage: "url(/bridal-feature.jpg)",
             backgroundSize: "cover",
-            backgroundPosition: "center 30%",
+            backgroundPosition: "right center",
           }}
         />
         <div

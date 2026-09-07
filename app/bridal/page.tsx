@@ -60,10 +60,9 @@ export default function BridalPage() {
           style={{
             position: "absolute",
             inset: 0,
-            backgroundImage:
-              "url(https://images.unsplash.com/photo-1594938298603-c8148c4b4e78?w=1600&q=90)",
+            backgroundImage: "url(/bridal-feature.jpg)",
             backgroundSize: "cover",
-            backgroundPosition: "center 15%",
+            backgroundPosition: "right center",
           }}
         />
         <div
