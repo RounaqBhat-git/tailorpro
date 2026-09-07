@@ -2,19 +2,19 @@ import Link from "next/link";
 
 const lookbookImages = [
   {
-    image: "https://images.unsplash.com/photo-1594938298603-c8148c4b4e78?w=800&q=85",
-    caption: "Crimson Bridal Lehenga with hand-embroidered zari work",
-    tall: true,
+    image: "/sharara-set-embroidery.jpg",
+    caption: "Sharara Set With Embroidery",
+    tag: "Sharara Set",
   },
   {
-    image: "https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=800&q=85",
-    caption: "Golden Anarkali — bridal reception look",
-    tall: false,
+    image: "/bridal-gown.png",
+    caption: "Heavy Silver Embellished Bridal Gown with delicate hand embroidery",
+    tag: "Artisan Gown",
   },
   {
-    image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=800&q=85",
-    caption: "Kashmiri tilla embroidery on silk dupatta",
-    tall: false,
+    image: "/velvet-lehenga-choli.jpg",
+    caption: "Velvet Lehenga Choli",
+    tag: "Bespoke Lehenga",
   },
 ];
 
@@ -44,12 +44,14 @@ const experience = [
 export default function BridalPage() {
   return (
     <>
-      {/* Full-bleed hero */}
+      {/* ══════════════════════════════════════════
+          HERO (Compact & Mobile Responsive)
+      ══════════════════════════════════════════ */}
       <section
         style={{
           position: "relative",
-          height: "100vh",
-          minHeight: 640,
+          height: "75vh",
+          minHeight: 520,
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -62,14 +64,14 @@ export default function BridalPage() {
             inset: 0,
             backgroundImage: "url(/bridal-feature.jpg)",
             backgroundSize: "cover",
-            backgroundPosition: "right center",
+            backgroundPosition: "center 30%",
           }}
         />
         <div
           style={{
             position: "absolute",
             inset: 0,
-            background: "rgba(10,6,4,0.62)",
+            background: "rgba(10,6,4,0.68)",
           }}
         />
         <div
@@ -77,17 +79,17 @@ export default function BridalPage() {
             position: "relative",
             zIndex: 1,
             textAlign: "center",
-            padding: "0 32px",
-            maxWidth: 760,
+            padding: "0 24px",
+            maxWidth: 680,
           }}
         >
           <div
             style={{
               fontSize: 11,
               fontWeight: 700,
-              letterSpacing: "0.25em",
+              letterSpacing: "0.22em",
               color: "#c9a84c",
-              marginBottom: 24,
+              marginBottom: 16,
             }}
           >
             ✦ &nbsp; BRIDAL COLLECTION &nbsp; ✦
@@ -95,11 +97,11 @@ export default function BridalPage() {
           <h1
             className="font-serif"
             style={{
-              fontSize: "clamp(40px, 7vw, 88px)",
+              fontSize: "clamp(30px, 4.5vw, 58px)",
               fontWeight: 800,
               color: "#fff",
-              lineHeight: 1.05,
-              marginBottom: 24,
+              lineHeight: 1.12,
+              marginBottom: 18,
             }}
           >
             Made for the
@@ -110,11 +112,11 @@ export default function BridalPage() {
           </h1>
           <p
             style={{
-              fontSize: 17,
-              color: "rgba(255,255,255,0.72)",
-              lineHeight: 1.85,
-              maxWidth: 520,
-              margin: "0 auto 48px",
+              fontSize: "clamp(14px, 1.4vw, 16px)",
+              color: "rgba(255,255,255,0.78)",
+              lineHeight: 1.8,
+              maxWidth: 480,
+              margin: "0 auto 36px",
             }}
           >
             Every bride deserves a garment that fits her story perfectly.
@@ -126,15 +128,20 @@ export default function BridalPage() {
         </div>
       </section>
 
-      {/* Brand promise */}
-      <section style={{ background: "#fff" }}>
+      {/* ══════════════════════════════════════════
+          BRAND PROMISE (With User's Royal Bridal Lehenga Image)
+      ══════════════════════════════════════════ */}
+      <section style={{ background: "#ffffff", padding: "80px 0" }}>
         <div
           className="section"
           style={{
             display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gap: 80,
+            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+            gap: 56,
             alignItems: "center",
+            maxWidth: 1180,
+            margin: "0 auto",
+            padding: "0 24px",
           }}
         >
           <div>
@@ -144,7 +151,7 @@ export default function BridalPage() {
                 fontWeight: 700,
                 letterSpacing: "0.18em",
                 color: "#c9a84c",
-                marginBottom: 16,
+                marginBottom: 14,
               }}
             >
               THE TAILOR PRO PROMISE
@@ -152,22 +159,22 @@ export default function BridalPage() {
             <h2
               className="font-serif"
               style={{
-                fontSize: "clamp(26px, 3.5vw, 42px)",
+                fontSize: "clamp(24px, 3.2vw, 40px)",
                 fontWeight: 700,
                 color: "#2c2c2c",
                 lineHeight: 1.25,
-                marginBottom: 20,
+                marginBottom: 18,
               }}
             >
               A Bridal Experience
               <br />as Special as You
             </h2>
-            <div className="gold-rule" style={{ marginBottom: 28 }} />
+            <div className="gold-rule" style={{ marginBottom: 24 }} />
             <p
               style={{
                 fontSize: 15,
                 color: "#666",
-                lineHeight: 1.9,
+                lineHeight: 1.85,
                 marginBottom: 16,
               }}
             >
@@ -175,7 +182,7 @@ export default function BridalPage() {
               to understand you: your family traditions, your aesthetic, your comfort level, and the
               emotions you want to carry on your wedding day.
             </p>
-            <p style={{ fontSize: 15, color: "#666", lineHeight: 1.9, marginBottom: 36 }}>
+            <p style={{ fontSize: 15, color: "#666", lineHeight: 1.85, marginBottom: 32 }}>
               The result is a garment that doesn&apos;t just look beautiful in photographs. It feels
               like a second skin.
             </p>
@@ -184,25 +191,43 @@ export default function BridalPage() {
             </Link>
           </div>
 
-          {/* Image */}
+          {/* Bridal Showcase Image */}
           <div
             style={{
-              height: 560,
+              position: "relative",
+              width: "100%",
+              maxWidth: 480,
+              margin: "0 auto",
               borderRadius: 24,
               overflow: "hidden",
-              backgroundImage:
-                "url(https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=700&q=85)",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
+              boxShadow: "0 16px 48px rgba(0,0,0,0.14)",
+              border: "1px solid #f0ece3",
+              background: "#faf7f3",
             }}
-          />
+          >
+            <div style={{ position: "relative", width: "100%", height: 540 }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/bridal.png"
+                alt="Bridal Collection Showcase"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  objectPosition: "center top",
+                }}
+              />
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* The bridal experience steps */}
-      <section style={{ background: "var(--bg)" }}>
-        <div className="section">
-          <div style={{ textAlign: "center", marginBottom: 60 }}>
+      {/* ══════════════════════════════════════════
+          BRIDAL EXPERIENCE STEPS
+      ══════════════════════════════════════════ */}
+      <section style={{ background: "#faf7f3", padding: "80px 0" }}>
+        <div className="section" style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px" }}>
+          <div style={{ textAlign: "center", marginBottom: 52 }}>
             <div
               style={{
                 fontSize: 11,
@@ -233,10 +258,11 @@ export default function BridalPage() {
               <div
                 key={e.title}
                 style={{
-                  background: "#fff",
+                  background: "#ffffff",
                   borderRadius: 20,
                   padding: "36px 28px",
-                  boxShadow: "0 2px 16px rgba(0,0,0,0.05)",
+                  boxShadow: "0 2px 14px rgba(0,0,0,0.04)",
+                  border: "1px solid #f0ece3",
                 }}
               >
                 <div
@@ -255,16 +281,18 @@ export default function BridalPage() {
                 >
                   {e.title}
                 </h3>
-                <p style={{ fontSize: 14, color: "#888", lineHeight: 1.75 }}>{e.body}</p>
+                <p style={{ fontSize: 14, color: "#777", lineHeight: 1.75 }}>{e.body}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Lookbook — editorial, not a product grid */}
-      <section style={{ background: "#fff" }}>
-        <div className="section">
+      {/* ══════════════════════════════════════════
+          BRIDAL ARCHIVE LOOKBOOK (Responsive Grid)
+      ══════════════════════════════════════════ */}
+      <section style={{ background: "#ffffff", padding: "80px 0" }}>
+        <div className="section" style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px" }}>
           <div style={{ textAlign: "center", marginBottom: 48 }}>
             <div
               style={{
@@ -283,7 +311,7 @@ export default function BridalPage() {
             >
               A Few Pieces from Our Bridal Archive
             </h2>
-            <p style={{ fontSize: 14, color: "#aaa", marginTop: 10 }}>
+            <p style={{ fontSize: 14, color: "#888", marginTop: 10 }}>
               Every piece shown was crafted for a real bride. Yours awaits in the app.
             </p>
           </div>
@@ -291,138 +319,78 @@ export default function BridalPage() {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "1fr 1fr 1fr",
-              gridTemplateRows: "auto auto",
-              gap: 16,
+              gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+              gap: 24,
             }}
           >
-            {/* Large left item */}
-            <div
-              style={{
-                gridRow: "span 2",
-                borderRadius: 20,
-                overflow: "hidden",
-                position: "relative",
-                minHeight: 560,
-              }}
-            >
+            {lookbookImages.map((img) => (
               <div
+                key={img.caption}
+                className="lift"
                 style={{
-                  position: "absolute",
-                  inset: 0,
-                  backgroundImage: `url(${lookbookImages[0].image})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center top",
-                }}
-              />
-              <div
-                style={{
-                  position: "absolute",
-                  bottom: 0,
-                  left: 0,
-                  right: 0,
-                  padding: "24px",
-                  background: "linear-gradient(to top, rgba(0,0,0,0.65), transparent)",
-                }}
-              >
-                <div style={{ fontSize: 12, color: "rgba(255,255,255,0.6)", marginBottom: 4 }}>
-                  Bridal Lehenga
-                </div>
-                <div
-                  className="font-serif"
-                  style={{ fontSize: 16, color: "#fff", fontWeight: 600 }}
-                >
-                  {lookbookImages[0].caption}
-                </div>
-              </div>
-            </div>
-
-            {/* Top right */}
-            <div
-              style={{
-                gridColumn: "span 2",
-                borderRadius: 20,
-                overflow: "hidden",
-                position: "relative",
-                height: 280,
-              }}
-            >
-              <div
-                style={{
-                  position: "absolute",
-                  inset: 0,
-                  backgroundImage: `url(${lookbookImages[1].image})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center 30%",
-                }}
-              />
-              <div
-                style={{
-                  position: "absolute",
-                  bottom: 0,
-                  left: 0,
-                  right: 0,
-                  padding: "20px 24px",
-                  background: "linear-gradient(to top, rgba(0,0,0,0.6), transparent)",
+                  height: 380,
+                  borderRadius: 20,
+                  overflow: "hidden",
+                  position: "relative",
+                  boxShadow: "0 8px 30px rgba(0,0,0,0.06)",
+                  border: "1px solid #f0ece3",
                 }}
               >
                 <div
-                  className="font-serif"
-                  style={{ fontSize: 16, color: "#fff", fontWeight: 600 }}
-                >
-                  {lookbookImages[1].caption}
-                </div>
-              </div>
-            </div>
-
-            {/* Bottom right */}
-            <div
-              style={{
-                gridColumn: "span 2",
-                borderRadius: 20,
-                overflow: "hidden",
-                position: "relative",
-                height: 264,
-              }}
-            >
-              <div
-                style={{
-                  position: "absolute",
-                  inset: 0,
-                  backgroundImage: `url(${lookbookImages[2].image})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                }}
-              />
-              <div
-                style={{
-                  position: "absolute",
-                  bottom: 0,
-                  left: 0,
-                  right: 0,
-                  padding: "20px 24px",
-                  background: "linear-gradient(to top, rgba(0,0,0,0.6), transparent)",
-                }}
-              >
+                  style={{
+                    position: "absolute",
+                    inset: 0,
+                    backgroundImage: `url(${img.image})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center top",
+                  }}
+                />
                 <div
-                  className="font-serif"
-                  style={{ fontSize: 16, color: "#fff", fontWeight: 600 }}
+                  style={{
+                    position: "absolute",
+                    inset: 0,
+                    background: "linear-gradient(to top, rgba(15,10,5,0.8) 0%, rgba(0,0,0,0.1) 60%)",
+                  }}
+                />
+                <div
+                  style={{
+                    position: "absolute",
+                    top: 16,
+                    right: 16,
+                    background: "rgba(201,168,76,0.9)",
+                    backdropFilter: "blur(4px)",
+                    color: "#ffffff",
+                    fontSize: 10,
+                    fontWeight: 700,
+                    padding: "5px 12px",
+                    borderRadius: 20,
+                    letterSpacing: "0.06em",
+                  }}
                 >
-                  {lookbookImages[2].caption}
+                  {img.tag}
+                </div>
+                <div
+                  style={{
+                    position: "absolute",
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
+                    padding: "24px",
+                  }}
+                >
+                  <div
+                    className="font-serif"
+                    style={{ fontSize: 16, color: "#fff", fontWeight: 600, lineHeight: 1.4 }}
+                  >
+                    {img.caption}
+                  </div>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
 
-          {/* App CTA */}
-          <div style={{ textAlign: "center", marginTop: 56 }}>
-            <p
-              style={{
-                fontSize: 15,
-                color: "#888",
-                marginBottom: 24,
-              }}
-            >
+          <div style={{ textAlign: "center", marginTop: 52 }}>
+            <p style={{ fontSize: 14, color: "#888", marginBottom: 20 }}>
               These are just a glimpse. The full bridal catalog lives in the app.
             </p>
             <Link href="/download" className="btn-gold">
@@ -432,21 +400,24 @@ export default function BridalPage() {
         </div>
       </section>
 
-      {/* Final CTA banner */}
+      {/* ══════════════════════════════════════════
+          FINAL BRIDAL CTA BANNER
+      ══════════════════════════════════════════ */}
       <section
         style={{
           background: "linear-gradient(135deg, #1e1a16 0%, #2c2018 100%)",
           borderTop: "1px solid rgba(201,168,76,0.15)",
+          padding: "80px 0",
         }}
       >
-        <div className="section" style={{ textAlign: "center" }}>
+        <div className="section" style={{ textAlign: "center", padding: "0 24px" }}>
           <div
             style={{
               fontSize: 11,
               fontWeight: 700,
               letterSpacing: "0.2em",
               color: "#c9a84c",
-              marginBottom: 20,
+              marginBottom: 18,
             }}
           >
             ✦ YOUR STORY BEGINS HERE ✦
@@ -454,10 +425,10 @@ export default function BridalPage() {
           <h2
             className="font-serif"
             style={{
-              fontSize: "clamp(28px, 4vw, 52px)",
+              fontSize: "clamp(26px, 4vw, 48px)",
               fontWeight: 800,
               color: "#fff",
-              marginBottom: 20,
+              marginBottom: 18,
             }}
           >
             Ready to Design Your Bridal Look?
@@ -465,9 +436,9 @@ export default function BridalPage() {
           <p
             style={{
               fontSize: 15,
-              color: "rgba(255,255,255,0.6)",
-              maxWidth: 440,
-              margin: "0 auto 40px",
+              color: "rgba(255,255,255,0.7)",
+              maxWidth: 460,
+              margin: "0 auto 36px",
               lineHeight: 1.8,
             }}
           >

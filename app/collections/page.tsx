@@ -1,41 +1,50 @@
 import Link from "next/link";
 
-const looks = [
+const mainCollections = [
   {
-    label: "Bridal Lehenga",
-    category: "Bridal",
-    image: "https://images.unsplash.com/photo-1594938298603-c8148c4b4e78?w=700&q=80",
-    wide: true,
+    title: "Women's Wear",
+    sub: "Everyday & Festive Ethnic Outfits",
+    image: "/cat-womens-wear.jpg",
+    itemsCount: "120+ Designs",
+    tag: "Custom Stitching",
+    position: "center 20%",
+    href: "/?category=Women%27s%20Wear",
   },
   {
-    label: "Kashmiri Pheran",
-    category: "Pherans",
-    image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=700&q=80",
-    wide: false,
+    title: "Bridal Collection",
+    sub: "Lehengas, Sarees & Gowns",
+    image: "/cat-bridal.jpg",
+    itemsCount: "80+ Designs",
+    tag: "Bespoke Couture",
+    position: "center 25%",
+    href: "/bridal",
   },
   {
-    label: "Anarkali Set",
-    category: "Women's Wear",
-    image: "https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=700&q=80",
-    wide: false,
+    title: "Pherans",
+    sub: "Kashmir's Signature Garment",
+    image: "/cat-pheran.jpg",
+    itemsCount: "60+ Designs",
+    tag: "Aari & Tilla Work",
+    position: "center 20%",
+    href: "/?category=Pherans",
   },
   {
-    label: "Embroidered Sherwani",
-    category: "Men's Wear",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=700&q=80",
-    wide: false,
+    title: "Men's Wear",
+    sub: "Sherwanis & Pathani Sets",
+    image: "/cat-mens-wear.jpg",
+    itemsCount: "90+ Designs",
+    tag: "Master Tailored",
+    position: "center 15%",
+    href: "/?category=Men%27s%20Wear",
   },
   {
-    label: "Silk Occasion Wear",
-    category: "Women's Wear",
-    image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=700&q=80",
-    wide: true,
-  },
-  {
-    label: "Pashmina Collection",
-    category: "Accessories",
-    image: "https://images.unsplash.com/photo-1617922001439-4a2e6562f328?w=700&q=80",
-    wide: false,
+    title: "Kids Wear",
+    sub: "Festive & Occasion Outfits",
+    image: "/cat-kids-wear.jpg",
+    itemsCount: "50+ Designs",
+    tag: "Junior Collection",
+    position: "35% center",
+    href: "/?category=Kids%20Wear",
   },
 ];
 
@@ -57,10 +66,13 @@ const pillars = [
 export default function CollectionsPage() {
   return (
     <>
-      {/* Hero */}
+      {/* ══════════════════════════════════════════
+          HERO
+      ══════════════════════════════════════════ */}
       <section
         style={{
-          paddingTop: 72,
+          paddingTop: 110,
+          paddingBottom: 72,
           background: "#1e1a16",
           position: "relative",
           overflow: "hidden",
@@ -70,16 +82,21 @@ export default function CollectionsPage() {
           style={{
             position: "absolute",
             inset: 0,
-            backgroundImage:
-              "url(https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=1400&q=80)",
+            backgroundImage: "url(/hero-fabric.jpg)",
             backgroundSize: "cover",
             backgroundPosition: "center 30%",
-            opacity: 0.3,
+            opacity: 0.25,
           }}
         />
         <div
-          className="section"
-          style={{ position: "relative", zIndex: 1, textAlign: "center", paddingBottom: 72 }}
+          className="section-sm"
+          style={{
+            position: "relative",
+            zIndex: 1,
+            textAlign: "center",
+            paddingLeft: 24,
+            paddingRight: 24,
+          }}
         >
           <div
             style={{
@@ -90,141 +107,188 @@ export default function CollectionsPage() {
               marginBottom: 16,
             }}
           >
-            OUR COLLECTIONS
+            ✦ &nbsp; OUR COLLECTIONS &nbsp; ✦
           </div>
           <h1
             className="font-serif"
             style={{
-              fontSize: "clamp(36px, 6vw, 72px)",
+              fontSize: "clamp(34px, 5.5vw, 68px)",
               fontWeight: 800,
               color: "#fff",
               lineHeight: 1.1,
               marginBottom: 20,
             }}
           >
-            A Glimpse of
-            <br />What We Create
+            Crafted for Every Occasion
           </h1>
           <p
             style={{
-              fontSize: 16,
-              color: "rgba(255,255,255,0.6)",
-              maxWidth: 480,
-              margin: "0 auto 40px",
+              fontSize: "clamp(14px, 1.5vw, 17px)",
+              color: "rgba(255,255,255,0.7)",
+              maxWidth: 540,
+              margin: "0 auto 36px",
               lineHeight: 1.8,
             }}
           >
-            These are just a few pieces from our ever-growing catalog. The full range of 500+ designs,
-            fabrics, and customisation options lives in the Tailor Pro app.
+            Explore our signature bespoke collections — featuring authentic Kashmiri craftsmanship,
+            handcrafted embroidery, and made-to-measure elegance.
           </p>
           <Link href="/download" className="btn-gold">
-            See All 500+ Designs in App
+            Explore 500+ Designs in App
           </Link>
         </div>
       </section>
 
-      {/* Editorial grid */}
-      <section style={{ background: "#fff" }}>
-        <div className="section">
+      {/* ══════════════════════════════════════════
+          COLLECTIONS GRID — HOMEPAGE MATCHED
+      ══════════════════════════════════════════ */}
+      <section style={{ background: "#faf7f3", padding: "72px 0" }}>
+        <div className="section" style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px" }}>
+          <div style={{ textAlign: "center", marginBottom: 48 }}>
+            <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.18em", color: "#c9a84c", marginBottom: 10 }}>
+              ✦ &nbsp; BESPOKE CATEGORIES &nbsp; ✦
+            </div>
+            <h2
+              className="font-serif"
+              style={{ fontSize: "clamp(26px, 3.5vw, 40px)", fontWeight: 700, color: "#2c2c2c" }}
+            >
+              Our Master Collections
+            </h2>
+            <p style={{ fontSize: 14, color: "#888", marginTop: 10, maxWidth: 460, margin: "10px auto 0" }}>
+              Select a collection below to view popular custom stitching designs and styles.
+            </p>
+          </div>
+
+          {/* Responsive Collection Cards Grid */}
           <div
             style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(3, 1fr)",
-              gridAutoRows: 340,
-              gap: 16,
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
+              gap: 20,
+              maxWidth: 1040,
+              margin: "0 auto",
             }}
           >
-            {looks.map((look, i) => (
-              <div
-                key={look.label}
+            {mainCollections.map((col) => (
+              <Link
+                key={col.title}
+                href={col.href}
                 className="lift"
                 style={{
                   position: "relative",
-                  borderRadius: 18,
+                  flex: "1 1 310px",
+                  maxWidth: 320,
+                  minWidth: 260,
+                  height: 340,
+                  borderRadius: 20,
                   overflow: "hidden",
-                  gridColumn: look.wide ? "span 2" : "span 1",
-                  cursor: "pointer",
+                  textDecoration: "none",
+                  boxShadow: "0 8px 30px rgba(0,0,0,0.08)",
+                  border: "1px solid #ede8df",
+                  display: "block",
                 }}
               >
+                {/* Background Image */}
                 <div
                   style={{
                     position: "absolute",
                     inset: 0,
-                    backgroundImage: `url(${look.image})`,
+                    backgroundImage: `url(${col.image})`,
                     backgroundSize: "cover",
-                    backgroundPosition: "center",
+                    backgroundPosition: col.position,
+                    transition: "transform 0.5s ease",
                   }}
                 />
+
+                {/* Dark Gradient Overlay */}
                 <div
                   style={{
                     position: "absolute",
                     inset: 0,
                     background:
-                      "linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 55%)",
+                      "linear-gradient(to top, rgba(15,10,5,0.85) 0%, rgba(15,10,5,0.2) 60%, rgba(0,0,0,0.1) 100%)",
                   }}
                 />
+
+                {/* Top Badge */}
+                <div
+                  style={{
+                    position: "absolute",
+                    top: 16,
+                    right: 16,
+                    background: "rgba(201,168,76,0.9)",
+                    backdropFilter: "blur(4px)",
+                    color: "#ffffff",
+                    fontSize: 10,
+                    fontWeight: 700,
+                    padding: "6px 12px",
+                    borderRadius: 20,
+                    letterSpacing: "0.06em",
+                    textTransform: "uppercase",
+                  }}
+                >
+                  {col.tag}
+                </div>
+
+                {/* Bottom Content */}
                 <div
                   style={{
                     position: "absolute",
                     bottom: 0,
                     left: 0,
                     right: 0,
-                    padding: "24px 24px",
+                    padding: "24px 22px",
                   }}
                 >
                   <div
-                    style={{
-                      fontSize: 10,
-                      fontWeight: 700,
-                      letterSpacing: "0.12em",
-                      color: "#c9a84c",
-                      marginBottom: 4,
-                    }}
-                  >
-                    {look.category.toUpperCase()}
-                  </div>
-                  <div
-                    className="font-serif"
-                    style={{ fontSize: 20, fontWeight: 700, color: "#fff" }}
-                  >
-                    {look.label}
-                  </div>
-                </div>
-                {/* "View in App" badge */}
-                <div
-                  style={{
-                    position: "absolute",
-                    top: 16,
-                    right: 16,
-                  }}
-                >
-                  <Link
-                    href="/download"
                     style={{
                       fontSize: 11,
                       fontWeight: 700,
-                      color: "#fff",
-                      background: "rgba(201,168,76,0.9)",
-                      padding: "6px 12px",
-                      borderRadius: 20,
-                      textDecoration: "none",
+                      letterSpacing: "0.14em",
+                      color: "#c9a84c",
+                      marginBottom: 6,
+                    }}
+                  >
+                    {col.itemsCount.toUpperCase()}
+                  </div>
+                  <h3
+                    className="font-serif"
+                    style={{ fontSize: 24, fontWeight: 700, color: "#ffffff", marginBottom: 6 }}
+                  >
+                    {col.title}
+                  </h3>
+                  <p style={{ fontSize: 13, color: "rgba(255,255,255,0.75)", marginBottom: 14 }}>
+                    {col.sub}
+                  </p>
+
+                  <div
+                    style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: 6,
+                      fontSize: 12,
+                      fontWeight: 700,
+                      color: "#c9a84c",
                       letterSpacing: "0.04em",
                     }}
                   >
-                    View in App
-                  </Link>
+                    Explore Collection <span style={{ fontSize: 14 }}>→</span>
+                  </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
 
-          {/* The "rest is in the app" nudge */}
+          {/* Banner Nudge */}
           <div
             style={{
-              marginTop: 56,
-              padding: "48px",
-              borderRadius: 20,
-              background: "var(--bg)",
+              marginTop: 64,
+              padding: "40px 32px",
+              borderRadius: 24,
+              background: "#ffffff",
+              border: "1px solid #ede7dc",
+              boxShadow: "0 10px 32px rgba(0,0,0,0.04)",
               display: "flex",
               alignItems: "center",
               justifyContent: "space-between",
@@ -242,30 +306,31 @@ export default function CollectionsPage() {
                   marginBottom: 8,
                 }}
               >
-                THAT&apos;S JUST THE BEGINNING
+                ✦ &nbsp; CRAFTED IN KASHMIR &nbsp; ✦
               </div>
               <h3
                 className="font-serif"
-                style={{ fontSize: 28, fontWeight: 700, color: "#2c2c2c", marginBottom: 8 }}
+                style={{ fontSize: 26, fontWeight: 700, color: "#2c2c2c", marginBottom: 8 }}
               >
-                500+ More Designs Await
+                500+ Custom Styles Await
               </h3>
-              <p style={{ fontSize: 14, color: "#888", maxWidth: 480, lineHeight: 1.7 }}>
-                Filter by category, fabric, occasion, and budget. Save your favourites, share measurements,
-                and order custom — all inside the app.
+              <p style={{ fontSize: 14, color: "#777", maxWidth: 520, lineHeight: 1.7 }}>
+                Filter by fabric, occasion, neckline, and embroidery pattern. Connect directly with master artisans inside the app.
               </p>
             </div>
             <Link href="/download" className="btn-gold" style={{ flexShrink: 0 }}>
-              Download the App
+              Download Tailor Pro App
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Craft pillars */}
-      <section style={{ background: "var(--bg)" }}>
-        <div className="section">
-          <div style={{ textAlign: "center", marginBottom: 56 }}>
+      {/* ══════════════════════════════════════════
+          CRAFT STANDARDS
+      ══════════════════════════════════════════ */}
+      <section style={{ background: "#ffffff", padding: "80px 0" }}>
+        <div className="section" style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px" }}>
+          <div style={{ textAlign: "center", marginBottom: 48 }}>
             <div
               style={{
                 fontSize: 11,
@@ -288,7 +353,7 @@ export default function CollectionsPage() {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+              gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
               gap: 24,
             }}
           >
@@ -296,18 +361,19 @@ export default function CollectionsPage() {
               <div
                 key={p.title}
                 style={{
-                  background: "#fff",
+                  background: "#faf7f3",
                   borderRadius: 20,
-                  padding: "36px 32px",
-                  boxShadow: "0 2px 16px rgba(0,0,0,0.05)",
+                  padding: "36px 28px",
+                  border: "1px solid #f0ece3",
+                  boxShadow: "0 2px 14px rgba(0,0,0,0.03)",
                 }}
               >
                 <div
                   className="font-serif"
                   style={{
-                    fontSize: 48,
+                    fontSize: 44,
                     fontWeight: 800,
-                    color: "#f0e8d8",
+                    color: "#e2d6be",
                     lineHeight: 1,
                     marginBottom: 16,
                   }}
@@ -320,7 +386,7 @@ export default function CollectionsPage() {
                 >
                   {p.title}
                 </h3>
-                <p style={{ fontSize: 14, color: "#888", lineHeight: 1.8 }}>{p.body}</p>
+                <p style={{ fontSize: 14, color: "#777", lineHeight: 1.8 }}>{p.body}</p>
               </div>
             ))}
           </div>

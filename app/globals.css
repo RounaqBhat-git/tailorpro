@@ -179,10 +179,10 @@ body {
 
 @media (max-width: 768px) {
   .section {
-    padding: 64px 20px;
+    padding: 64px 24px;
   }
   .section-sm {
-    padding: 48px 20px;
+    padding: 48px 24px;
   }
 }
 

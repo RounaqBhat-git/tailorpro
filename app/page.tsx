@@ -286,13 +286,15 @@ export default function HomePage() {
 
         {/* ── Text content — left half ── */}
         <div
-          className="px-8 md:px-12 pt-24 md:pt-0"
           style={{
             position: "relative",
             zIndex: 2,
             maxWidth: 1200,
             margin: "0 auto",
             width: "100%",
+            paddingLeft: 28,
+            paddingRight: 28,
+            paddingTop: 110,
           }}
         >
           {/* Eyebrow */}
@@ -301,7 +303,7 @@ export default function HomePage() {
               display: "flex",
               alignItems: "center",
               gap: 12,
-              marginBottom: 24,
+              marginBottom: 20,
             }}
           >
             <div style={{ width: 32, height: 1, background: "#c9a84c" }} />
@@ -309,7 +311,7 @@ export default function HomePage() {
               style={{
                 fontSize: 11,
                 fontWeight: 700,
-                letterSpacing: "0.2em",
+                letterSpacing: "0.18em",
                 color: "#c9a84c",
                 textTransform: "uppercase",
               }}
@@ -321,12 +323,12 @@ export default function HomePage() {
           <h1
             className="font-serif"
             style={{
-              fontSize: "clamp(42px, 6vw, 88px)",
+              fontSize: "clamp(34px, 5.5vw, 88px)",
               fontWeight: 800,
               color: "#fff",
-              lineHeight: 1.05,
+              lineHeight: 1.08,
               maxWidth: 560,
-              marginBottom: 24,
+              marginBottom: 20,
             }}
           >
             Wear the Art
@@ -336,11 +338,11 @@ export default function HomePage() {
 
           <p
             style={{
-              fontSize: "clamp(15px, 1.5vw, 18px)",
-              color: "rgba(255,255,255,0.75)",
+              fontSize: "clamp(14px, 1.5vw, 18px)",
+              color: "rgba(255,255,255,0.8)",
               maxWidth: 460,
-              lineHeight: 1.8,
-              marginBottom: 40,
+              lineHeight: 1.75,
+              marginBottom: 32,
             }}
           >
             Custom-stitched Pherans, bridal wear &amp; ethnic outfits — crafted by
@@ -348,7 +350,7 @@ export default function HomePage() {
           </p>
 
           {/* Proof points */}
-          <div style={{ display: "flex", gap: "16px 24px", marginBottom: 48, flexWrap: "wrap" }}>
+          <div style={{ display: "flex", gap: "12px 20px", marginBottom: 36, flexWrap: "wrap" }}>
             {[
               { icon: "✦", text: "Custom Stitching" },
               { icon: "◈", text: "Made to Measure" },
@@ -359,18 +361,18 @@ export default function HomePage() {
                 style={{
                   display: "flex",
                   alignItems: "center",
-                  gap: 8,
-                  fontSize: 13,
-                  color: "rgba(255,255,255,0.7)",
+                  gap: 7,
+                  fontSize: 12,
+                  color: "rgba(255,255,255,0.75)",
                 }}
               >
-                <span style={{ color: "#c9a84c", fontSize: 12 }}>{p.icon}</span>
+                <span style={{ color: "#c9a84c", fontSize: 11 }}>{p.icon}</span>
                 {p.text}
               </div>
             ))}
           </div>
 
-          <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
+          <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
             <Link href="/download" className="btn-gold">
               Download The App
             </Link>
@@ -496,9 +498,12 @@ export default function HomePage() {
 
           <div
             style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))",
-              gap: 16,
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
+              gap: 20,
+              maxWidth: 1040,
+              margin: "0 auto",
             }}
           >
             {categories.map((cat) => {
@@ -510,8 +515,11 @@ export default function HomePage() {
                   className="lift"
                   style={{
                     position: "relative",
-                    height: 260,
-                    borderRadius: 16,
+                    flex: "1 1 310px",
+                    maxWidth: 320,
+                    minWidth: 260,
+                    height: 270,
+                    borderRadius: 18,
                     overflow: "hidden",
                     cursor: "pointer",
                     border: isSelected ? "2px solid #c9a84c" : "1px solid transparent",
@@ -650,215 +658,215 @@ export default function HomePage() {
               </div>
             </div>
 
-          {/* Carousel Track with Side Scroll Buttons */}
-          <div style={{ position: "relative", maxWidth: 940, margin: "0 auto", padding: "0 48px" }}>
-            {/* Left Scroll Arrow */}
-            <button
-              onClick={() => scrollCarousel("left")}
-              aria-label="Scroll left"
-              style={{
-                position: "absolute",
-                left: 0,
-                top: "45%",
-                transform: "translateY(-50%)",
-                zIndex: 20,
-                width: 40,
-                height: 40,
-                borderRadius: "50%",
-                border: "1px solid #e0d7c6",
-                background: "#ffffff",
-                color: "#2c2c2c",
-                fontSize: 22,
-                fontWeight: 600,
-                cursor: "pointer",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                boxShadow: "0 4px 14px rgba(0,0,0,0.12)",
-                transition: "all 0.2s ease",
-              }}
-            >
-              ‹
-            </button>
+            {/* Carousel Track with Side Scroll Buttons */}
+            <div style={{ position: "relative", maxWidth: 940, margin: "0 auto", padding: "0 48px" }}>
+              {/* Left Scroll Arrow */}
+              <button
+                onClick={() => scrollCarousel("left")}
+                aria-label="Scroll left"
+                style={{
+                  position: "absolute",
+                  left: 0,
+                  top: "45%",
+                  transform: "translateY(-50%)",
+                  zIndex: 20,
+                  width: 40,
+                  height: 40,
+                  borderRadius: "50%",
+                  border: "1px solid #e0d7c6",
+                  background: "#ffffff",
+                  color: "#2c2c2c",
+                  fontSize: 22,
+                  fontWeight: 600,
+                  cursor: "pointer",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  boxShadow: "0 4px 14px rgba(0,0,0,0.12)",
+                  transition: "all 0.2s ease",
+                }}
+              >
+                ‹
+              </button>
 
-            {/* Product Cards Track */}
-            <div
-              ref={carouselRef}
-              className="no-scrollbar"
-              style={{
-                display: "flex",
-                gap: 20,
-                justifyContent: "center",
-                overflowX: "auto",
-                scrollBehavior: "smooth",
-                padding: "8px 4px 20px 4px",
-                width: "100%",
-              }}
-            >
-              {(catalogItems[selectedCategory || "Women's Wear"] || []).map((item) => {
-                const isFav = !!favorites[item.id];
-                return (
-                  <div
-                    key={item.id}
-                    className="lift"
-                    style={{
-                      minWidth: 245,
-                      width: 245,
-                      background: "#ffffff",
-                      borderRadius: 20,
-                      border: "1px solid #f0ece1",
-                      padding: 12,
-                      boxShadow: "0 8px 24px rgba(0,0,0,0.04)",
-                      flexShrink: 0,
-                      cursor: "pointer",
-                    }}
-                  >
-                    {/* Image Box */}
+              {/* Product Cards Track */}
+              <div
+                ref={carouselRef}
+                className="no-scrollbar"
+                style={{
+                  display: "flex",
+                  gap: 20,
+                  justifyContent: "center",
+                  overflowX: "auto",
+                  scrollBehavior: "smooth",
+                  padding: "8px 4px 20px 4px",
+                  width: "100%",
+                }}
+              >
+                {(catalogItems[selectedCategory || "Women's Wear"] || []).map((item) => {
+                  const isFav = !!favorites[item.id];
+                  return (
                     <div
+                      key={item.id}
+                      className="lift"
                       style={{
-                        position: "relative",
-                        height: 250,
-                        borderRadius: 14,
-                        overflow: "hidden",
-                        backgroundImage: `url(${item.image})`,
-                        backgroundSize: "cover",
-                        backgroundPosition: "center top",
+                        minWidth: 245,
+                        width: 245,
+                        background: "#ffffff",
+                        borderRadius: 20,
+                        border: "1px solid #f0ece1",
+                        padding: 12,
+                        boxShadow: "0 8px 24px rgba(0,0,0,0.04)",
+                        flexShrink: 0,
+                        cursor: "pointer",
                       }}
                     >
-                      {/* Stitching Badge */}
+                      {/* Image Box */}
                       <div
                         style={{
-                          position: "absolute",
-                          bottom: 10,
-                          left: 10,
-                          background: "rgba(35,30,25,0.8)",
-                          backdropFilter: "blur(6px)",
-                          color: "#ffffff",
-                          fontSize: 11,
-                          fontWeight: 600,
-                          padding: "5px 11px",
-                          borderRadius: 8,
-                          display: "flex",
-                          alignItems: "center",
-                          gap: 5,
-                        }}
-                      >
-                        <span style={{ fontSize: 11, color: "#c9a84c" }}>⚒</span>
-                        {item.tag || "Stitching"}
-                      </div>
-
-                      {/* Heart Button */}
-                      <button
-                        onClick={(e) => toggleFavorite(item.id, e)}
-                        aria-label="Favorite design"
-                        style={{
-                          position: "absolute",
-                          top: 10,
-                          right: 10,
-                          width: 32,
-                          height: 32,
-                          borderRadius: "50%",
-                          background: "#ffffff",
-                          border: "none",
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                          boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
-                          cursor: "pointer",
-                        }}
-                      >
-                        <svg
-                          width="16"
-                          height="16"
-                          viewBox="0 0 24 24"
-                          fill={isFav ? "#e63946" : "none"}
-                          stroke={isFav ? "#e63946" : "#666"}
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        >
-                          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-                        </svg>
-                      </button>
-                    </div>
-
-                    {/* Meta info */}
-                    <div style={{ marginTop: 12, padding: "0 4px 4px" }}>
-                      <div
-                        className="font-serif"
-                        style={{
-                          fontSize: 15,
-                          fontWeight: 600,
-                          color: "#2c2c2c",
-                          marginBottom: 4,
-                          whiteSpace: "nowrap",
+                          position: "relative",
+                          height: 250,
+                          borderRadius: 14,
                           overflow: "hidden",
-                          textOverflow: "ellipsis",
+                          backgroundImage: `url(${item.image})`,
+                          backgroundSize: "cover",
+                          backgroundPosition: "center top",
                         }}
                       >
-                        {item.title}
-                      </div>
-                      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+                        {/* Stitching Badge */}
                         <div
                           style={{
-                            fontSize: 14,
-                            fontWeight: 700,
-                            color: "#c9a84c",
+                            position: "absolute",
+                            bottom: 10,
+                            left: 10,
+                            background: "rgba(35,30,25,0.8)",
+                            backdropFilter: "blur(6px)",
+                            color: "#ffffff",
+                            fontSize: 11,
+                            fontWeight: 600,
+                            padding: "5px 11px",
+                            borderRadius: 8,
+                            display: "flex",
+                            alignItems: "center",
+                            gap: 5,
                           }}
                         >
-                          {item.price}
+                          <span style={{ fontSize: 11, color: "#c9a84c" }}>⚒</span>
+                          {item.tag || "Stitching"}
                         </div>
-                        <div
+
+                        {/* Heart Button */}
+                        <button
+                          onClick={(e) => toggleFavorite(item.id, e)}
+                          aria-label="Favorite design"
                           style={{
-                            fontSize: 10,
-                            fontWeight: 700,
-                            color: "#2d6a4f",
-                            background: "#e8f5e9",
-                            padding: "3px 7px",
-                            borderRadius: 5,
-                            letterSpacing: "0.04em",
+                            position: "absolute",
+                            top: 10,
+                            right: 10,
+                            width: 32,
+                            height: 32,
+                            borderRadius: "50%",
+                            background: "#ffffff",
+                            border: "none",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
+                            cursor: "pointer",
                           }}
                         >
-                          CUSTOM FIT
+                          <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 24 24"
+                            fill={isFav ? "#e63946" : "none"}
+                            stroke={isFav ? "#e63946" : "#666"}
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          >
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                          </svg>
+                        </button>
+                      </div>
+
+                      {/* Meta info */}
+                      <div style={{ marginTop: 12, padding: "0 4px 4px" }}>
+                        <div
+                          className="font-serif"
+                          style={{
+                            fontSize: 15,
+                            fontWeight: 600,
+                            color: "#2c2c2c",
+                            marginBottom: 4,
+                            whiteSpace: "nowrap",
+                            overflow: "hidden",
+                            textOverflow: "ellipsis",
+                          }}
+                        >
+                          {item.title}
+                        </div>
+                        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+                          <div
+                            style={{
+                              fontSize: 14,
+                              fontWeight: 700,
+                              color: "#c9a84c",
+                            }}
+                          >
+                            {item.price}
+                          </div>
+                          <div
+                            style={{
+                              fontSize: 10,
+                              fontWeight: 700,
+                              color: "#2d6a4f",
+                              background: "#e8f5e9",
+                              padding: "3px 7px",
+                              borderRadius: 5,
+                              letterSpacing: "0.04em",
+                            }}
+                          >
+                            CUSTOM FIT
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                );
-              })}
-            </div>
+                  );
+                })}
+              </div>
 
-            {/* Right Scroll Arrow */}
-            <button
-              onClick={() => scrollCarousel("right")}
-              aria-label="Scroll right"
-              style={{
-                position: "absolute",
-                right: 0,
-                top: "45%",
-                transform: "translateY(-50%)",
-                zIndex: 20,
-                width: 40,
-                height: 40,
-                borderRadius: "50%",
-                border: "1px solid #e0d7c6",
-                background: "#ffffff",
-                color: "#2c2c2c",
-                fontSize: 22,
-                fontWeight: 600,
-                cursor: "pointer",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                boxShadow: "0 4px 14px rgba(0,0,0,0.12)",
-                transition: "all 0.2s ease",
-              }}
-            >
-              ›
-            </button>
+              {/* Right Scroll Arrow */}
+              <button
+                onClick={() => scrollCarousel("right")}
+                aria-label="Scroll right"
+                style={{
+                  position: "absolute",
+                  right: 0,
+                  top: "45%",
+                  transform: "translateY(-50%)",
+                  zIndex: 20,
+                  width: 40,
+                  height: 40,
+                  borderRadius: "50%",
+                  border: "1px solid #e0d7c6",
+                  background: "#ffffff",
+                  color: "#2c2c2c",
+                  fontSize: 22,
+                  fontWeight: 600,
+                  cursor: "pointer",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  boxShadow: "0 4px 14px rgba(0,0,0,0.12)",
+                  transition: "all 0.2s ease",
+                }}
+              >
+                ›
+              </button>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
       )}
 
       {/* ══════════════════════════════════════════
@@ -1103,11 +1111,11 @@ export default function HomePage() {
         <div style={{ position: "absolute", top: "50%", right: "18%", transform: "translate(50%,-50%)", width: 420, height: 420, borderRadius: "50%", background: "radial-gradient(circle, rgba(201,168,76,0.18) 0%, transparent 70%)", filter: "blur(40px)", pointerEvents: "none", zIndex: 0 }} />
 
         <div
-          className="section"
-          style={{ display: "grid", gridTemplateColumns: "1fr auto", gap: 64, alignItems: "center", position: "relative", zIndex: 1 }}
+          className="section flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-16"
+          style={{ position: "relative", zIndex: 1 }}
         >
           {/* ── Left ── */}
-          <div>
+          <div className="w-full lg:max-w-xl text-center lg:text-left flex flex-col items-center lg:items-start">
             <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.2em", color: "#c9a84c", marginBottom: 20 }}>
               ✦ &nbsp; THE FULL EXPERIENCE &nbsp; ✦
             </div>
@@ -1122,7 +1130,7 @@ export default function HomePage() {
             </p>
 
             {/* App store badges — glass style */}
-            <div style={{ display: "flex", gap: 14, flexWrap: "wrap", marginBottom: 48 }}>
+            <div className="flex flex-wrap gap-3.5 mb-10 justify-center lg:justify-start">
               <a href="#" className="badge-glass">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff">
                   <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
@@ -1147,7 +1155,7 @@ export default function HomePage() {
             </div>
 
             {/* Feature chips */}
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
+            <div className="flex flex-wrap gap-2.5 justify-center lg:justify-start">
               {[
                 { icon: "✦", label: "500+ curated designs" },
                 { icon: "💬", label: "Live tailor chat" },
@@ -1165,7 +1173,7 @@ export default function HomePage() {
           </div>
 
           {/* ── Right: animated phone mockup ── */}
-          <div style={{ flexShrink: 0 }} className="hidden lg:block">
+          <div style={{ flexShrink: 0 }} className="flex justify-center w-full lg:w-auto mt-4 lg:mt-0">
             <div className="phone-float" style={{ position: "relative" }}>
               {/* Phone frame */}
               <div style={{ width: 240, height: 480, borderRadius: 40, background: "#0d0d0d", border: "6px solid #2a2a2a", position: "relative", overflow: "hidden", boxShadow: "0 40px 100px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,255,255,0.04), inset 0 1px 0 rgba(255,255,255,0.07)" }}>

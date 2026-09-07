@@ -37,7 +37,6 @@ export default function Navbar() {
       }}
     >
       <div
-        className="px-8 md:px-12"
         style={{
           maxWidth: 1200,
           margin: "0 auto",
@@ -45,6 +44,8 @@ export default function Navbar() {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
+          paddingLeft: 28,
+          paddingRight: 28,
         }}
       >
         {/* Logo */}

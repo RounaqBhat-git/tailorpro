@@ -4,7 +4,7 @@ const team = [
   {
     name: "Gulzar Ahmed",
     role: "Founder & Master Tailor",
-    bio: "35+ years crafting garments in Srinagar. Gulzar founded Tailor Pro to preserve Kashmiri artisanship for the next generation.",
+    bio: "35+ years crafting bespoke garments in Srinagar. Gulzar founded Tailor Pro to preserve Kashmiri artisanship for the next generation.",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
   },
   {
@@ -39,29 +39,45 @@ const values = [
 export default function AboutPage() {
   return (
     <>
-      {/* Hero */}
+      {/* ══════════════════════════════════════════
+          HERO (With Boutique Studio Background)
+      ══════════════════════════════════════════ */}
       <section
         style={{
-          paddingTop: 72,
+          paddingTop: 110,
+          paddingBottom: 80,
           position: "relative",
           overflow: "hidden",
-          background: "#1e1a16",
+          background: "#181410",
         }}
       >
         <div
           style={{
             position: "absolute",
             inset: 0,
-            backgroundImage:
-              "url(https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1400&q=80)",
+            backgroundImage: "url(/about-boutique.jpg)",
             backgroundSize: "cover",
-            backgroundPosition: "center",
-            opacity: 0.25,
+            backgroundPosition: "center 30%",
+            opacity: 0.3,
           }}
         />
         <div
-          className="section"
-          style={{ position: "relative", zIndex: 1, paddingBottom: 80 }}
+          style={{
+            position: "absolute",
+            inset: 0,
+            background: "linear-gradient(to top, rgba(24,20,16,0.95) 0%, rgba(24,20,16,0.6) 60%, rgba(24,20,16,0.85) 100%)",
+          }}
+        />
+        <div
+          className="section-sm"
+          style={{
+            position: "relative",
+            zIndex: 1,
+            paddingLeft: 24,
+            paddingRight: 24,
+            maxWidth: 1200,
+            margin: "0 auto",
+          }}
         >
           <div
             style={{
@@ -69,20 +85,20 @@ export default function AboutPage() {
               fontWeight: 700,
               letterSpacing: "0.2em",
               color: "#c9a84c",
-              marginBottom: 20,
+              marginBottom: 18,
             }}
           >
-            OUR STORY
+            ✦ &nbsp; OUR STORY &nbsp; ✦
           </div>
           <h1
             className="font-serif"
             style={{
-              fontSize: "clamp(36px, 6vw, 72px)",
+              fontSize: "clamp(34px, 5.5vw, 68px)",
               fontWeight: 800,
               color: "#fff",
               lineHeight: 1.1,
               maxWidth: 700,
-              marginBottom: 24,
+              marginBottom: 20,
             }}
           >
             Rooted in Kashmir,
@@ -91,9 +107,9 @@ export default function AboutPage() {
           </h1>
           <p
             style={{
-              fontSize: 17,
-              color: "rgba(255,255,255,0.65)",
-              maxWidth: 520,
+              fontSize: "clamp(15px, 1.5vw, 18px)",
+              color: "rgba(255,255,255,0.72)",
+              maxWidth: 540,
               lineHeight: 1.85,
             }}
           >
@@ -103,15 +119,20 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Brand story — long-form editorial */}
-      <section style={{ background: "#fff" }}>
+      {/* ══════════════════════════════════════════
+          BRAND STORY — BOUTIQUE STUDIO SHOWCASE
+      ══════════════════════════════════════════ */}
+      <section style={{ background: "#ffffff", padding: "80px 0" }}>
         <div
           className="section"
           style={{
             display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gap: 80,
-            alignItems: "start",
+            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+            gap: 56,
+            alignItems: "center",
+            maxWidth: 1200,
+            margin: "0 auto",
+            padding: "0 24px",
           }}
         >
           {/* Left: story */}
@@ -122,7 +143,7 @@ export default function AboutPage() {
                 fontWeight: 700,
                 letterSpacing: "0.18em",
                 color: "#c9a84c",
-                marginBottom: 16,
+                marginBottom: 14,
               }}
             >
               SINCE 1992
@@ -130,55 +151,58 @@ export default function AboutPage() {
             <h2
               className="font-serif"
               style={{
-                fontSize: "clamp(24px, 3vw, 36px)",
+                fontSize: "clamp(24px, 3vw, 38px)",
                 fontWeight: 700,
                 color: "#2c2c2c",
-                marginBottom: 20,
+                lineHeight: 1.25,
+                marginBottom: 18,
               }}
             >
               A Workshop in Srinagar,
               <br />A Vision for the Valley
             </h2>
-            <div className="gold-rule" style={{ marginBottom: 28 }} />
-            <p style={{ fontSize: 15, color: "#555", lineHeight: 1.95, marginBottom: 20 }}>
+            <div className="gold-rule" style={{ marginBottom: 24 }} />
+            <p style={{ fontSize: 15, color: "#555", lineHeight: 1.9, marginBottom: 18 }}>
               Gulzar Ahmed opened his first workshop on Residency Road, Srinagar, in 1992. There
               were no apps, no websites — just a measuring tape, a sewing machine, and a reputation
               for getting the fit exactly right.
             </p>
-            <p style={{ fontSize: 15, color: "#555", lineHeight: 1.95, marginBottom: 20 }}>
+            <p style={{ fontSize: 15, color: "#555", lineHeight: 1.9, marginBottom: 18 }}>
               Over the following decades, word spread. Brides came from Delhi. Families from Jammu
               sent their daughters for bridal consultations. The workshop grew, but the philosophy
               never changed: every garment is made for one person, fitted to one body, finished by hand.
             </p>
-            <p style={{ fontSize: 15, color: "#555", lineHeight: 1.95 }}>
+            <p style={{ fontSize: 15, color: "#555", lineHeight: 1.9 }}>
               Today, Tailor Pro has over 50 artisans, a design studio, and an app that brings this
               experience to anyone across India. The workshop on Residency Road still runs. The measuring
               tape still matters most.
             </p>
           </div>
 
-          {/* Right: stats + image */}
+          {/* Right: Studio interior image + stats */}
           <div>
             <div
               style={{
-                height: 400,
+                height: 420,
                 borderRadius: 24,
                 overflow: "hidden",
-                backgroundImage:
-                  "url(https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=700&q=85)",
+                backgroundImage: "url(/about-boutique.jpg)",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
-                marginBottom: 32,
+                boxShadow: "0 12px 40px rgba(0,0,0,0.12)",
+                border: "1px solid #f0ece3",
+                marginBottom: 24,
               }}
             />
             <div
               style={{
                 display: "grid",
-                gridTemplateColumns: "1fr 1fr 1fr",
-                gap: 24,
+                gridTemplateColumns: "repeat(3, 1fr)",
+                gap: 16,
                 padding: "24px",
-                background: "var(--bg)",
-                borderRadius: 16,
+                background: "#faf7f3",
+                borderRadius: 20,
+                border: "1px solid #f0ece3",
               }}
             >
               {[
@@ -189,11 +213,11 @@ export default function AboutPage() {
                 <div key={s.l} style={{ textAlign: "center" }}>
                   <div
                     className="font-serif"
-                    style={{ fontSize: 28, fontWeight: 800, color: "#c9a84c" }}
+                    style={{ fontSize: 26, fontWeight: 800, color: "#c9a84c" }}
                   >
                     {s.n}
                   </div>
-                  <div style={{ fontSize: 12, color: "#999", marginTop: 4 }}>{s.l}</div>
+                  <div style={{ fontSize: 12, color: "#888", marginTop: 4 }}>{s.l}</div>
                 </div>
               ))}
             </div>
@@ -201,10 +225,12 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Values */}
-      <section style={{ background: "var(--bg)" }}>
-        <div className="section">
-          <div style={{ textAlign: "center", marginBottom: 56 }}>
+      {/* ══════════════════════════════════════════
+          VALUES (Mobile Responsive Grid)
+      ══════════════════════════════════════════ */}
+      <section style={{ background: "#faf7f3", padding: "80px 0" }}>
+        <div className="section" style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px" }}>
+          <div style={{ textAlign: "center", marginBottom: 48 }}>
             <div
               style={{
                 fontSize: 11,
@@ -226,7 +252,7 @@ export default function AboutPage() {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(3, 1fr)",
+              gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
               gap: 24,
             }}
           >
@@ -234,18 +260,19 @@ export default function AboutPage() {
               <div
                 key={v.title}
                 style={{
-                  background: "#fff",
+                  background: "#ffffff",
                   borderRadius: 20,
-                  padding: "40px 32px",
-                  boxShadow: "0 2px 16px rgba(0,0,0,0.05)",
+                  padding: "36px 28px",
+                  boxShadow: "0 2px 14px rgba(0,0,0,0.04)",
+                  border: "1px solid #f0ece3",
                 }}
               >
                 <div
                   className="font-serif"
                   style={{
-                    fontSize: 52,
+                    fontSize: 44,
                     fontWeight: 800,
-                    color: "#f0e8d8",
+                    color: "#e2d6be",
                     lineHeight: 1,
                     marginBottom: 16,
                   }}
@@ -258,17 +285,19 @@ export default function AboutPage() {
                 >
                   {v.title}
                 </h3>
-                <p style={{ fontSize: 14, color: "#888", lineHeight: 1.8 }}>{v.body}</p>
+                <p style={{ fontSize: 14, color: "#777", lineHeight: 1.8 }}>{v.body}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Team */}
-      <section style={{ background: "#fff" }}>
-        <div className="section">
-          <div style={{ marginBottom: 48 }}>
+      {/* ══════════════════════════════════════════
+          TEAM (Mobile Responsive Grid)
+      ══════════════════════════════════════════ */}
+      <section style={{ background: "#ffffff", padding: "80px 0" }}>
+        <div className="section" style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px" }}>
+          <div style={{ marginBottom: 48, textAlign: "center" }}>
             <div
               style={{
                 fontSize: 11,
@@ -291,21 +320,29 @@ export default function AboutPage() {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+              gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
               gap: 24,
             }}
           >
             {team.map((member) => (
-              <div key={member.name}>
+              <div
+                key={member.name}
+                style={{
+                  background: "#faf7f3",
+                  borderRadius: 20,
+                  padding: 16,
+                  border: "1px solid #f0ece3",
+                }}
+              >
                 <div
                   style={{
-                    height: 360,
-                    borderRadius: 20,
+                    height: 320,
+                    borderRadius: 16,
                     overflow: "hidden",
                     backgroundImage: `url(${member.image})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center top",
-                    marginBottom: 20,
+                    marginBottom: 16,
                   }}
                 />
                 <div
@@ -316,7 +353,7 @@ export default function AboutPage() {
                 </div>
                 <div
                   style={{
-                    fontSize: 12,
+                    fontSize: 11,
                     fontWeight: 700,
                     letterSpacing: "0.1em",
                     color: "#c9a84c",
@@ -325,20 +362,33 @@ export default function AboutPage() {
                 >
                   {member.role.toUpperCase()}
                 </div>
-                <p style={{ fontSize: 14, color: "#888", lineHeight: 1.75 }}>{member.bio}</p>
+                <p style={{ fontSize: 13, color: "#777", lineHeight: 1.7 }}>{member.bio}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section style={{ background: "#1e1a16" }}>
-        <div className="section" style={{ textAlign: "center" }}>
+      {/* ══════════════════════════════════════════
+          FINAL ABOUT CTA
+      ══════════════════════════════════════════ */}
+      <section style={{ background: "#181410", padding: "80px 0" }}>
+        <div className="section" style={{ textAlign: "center", padding: "0 24px" }}>
+          <div
+            style={{
+              fontSize: 11,
+              fontWeight: 700,
+              letterSpacing: "0.2em",
+              color: "#c9a84c",
+              marginBottom: 16,
+            }}
+          >
+            ✦ EXPERIENCE TAILOR PRO ✦
+          </div>
           <h2
             className="font-serif"
             style={{
-              fontSize: "clamp(28px, 4vw, 48px)",
+              fontSize: "clamp(26px, 4vw, 48px)",
               fontWeight: 800,
               color: "#fff",
               marginBottom: 16,
@@ -349,13 +399,13 @@ export default function AboutPage() {
           <p
             style={{
               fontSize: 15,
-              color: "rgba(255,255,255,0.55)",
-              maxWidth: 400,
+              color: "rgba(255,255,255,0.65)",
+              maxWidth: 440,
               margin: "0 auto 36px",
               lineHeight: 1.8,
             }}
           >
-            Download the app and connect with our artisans directly.
+            Download the app and connect with our master artisans directly.
           </p>
           <Link href="/download" className="btn-gold">
             Download Tailor Pro
