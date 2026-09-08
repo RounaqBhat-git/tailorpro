@@ -54,7 +54,7 @@ export default function Footer() {
             </div>
           </div>
           <p style={{ fontSize: 13, color: "rgba(255,255,255,0.5)", lineHeight: 1.8, maxWidth: 240 }}>
-            Custom-stitched Pherans, bridal wear & ethnic outfits — crafted by master artisans
+            Custom-stitched Pherans, bridal wear & ethnic outfits, crafted by master artisans
             with 30+ years of tradition.
           </p>
         </div>
@@ -94,7 +94,7 @@ export default function Footer() {
           </div>
           {[
             "Residency Road, Srinagar",
-            "Kashmir — 190001",
+            "Kashmir, 190001",
             "hello@tailorpro.in",
             "+91 94190 00000",
           ].map((line) => (

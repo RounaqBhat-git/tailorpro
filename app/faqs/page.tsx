@@ -130,7 +130,7 @@ const faqs: FAQItem[] = [
     category: "fabric",
     question: "Do I need to provide my own fabric?",
     answer:
-      "Yes. Tailor Pro currently offers stitching services only — customers must provide their own fabric, which is inspected and acknowledged by the tailor at pickup.",
+      "Yes. Tailor Pro currently offers stitching services only, so customers must provide their own fabric, which is inspected and acknowledged by the tailor at pickup.",
   },
   {
     id: 15,
@@ -144,7 +144,7 @@ const faqs: FAQItem[] = [
     category: "fabric",
     question: "How long does it take to receive my stitched garment?",
     answer:
-      "Standard turnaround is typically 5–7 business days from fabric pickup, depending on garment type and design complexity; express stitching may be available at an added charge.",
+      "Standard turnaround is typically 5 to 7 business days from fabric pickup, depending on garment type and design complexity; express stitching may be available at an added charge.",
   },
   {
     id: 17,

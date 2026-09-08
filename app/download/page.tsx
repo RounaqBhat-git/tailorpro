@@ -4,7 +4,7 @@ const exclusiveFeatures = [
   {
     icon: "◈",
     title: "500+ Curated Designs",
-    body: "Browse the full catalog across Women's Wear, Men's Wear, Bridal, Pherans, and Kids — filter by occasion, fabric, and price.",
+    body: "Browse the full catalog across Women's Wear, Men's Wear, Bridal, Pherans, and Kids. Filter by occasion, fabric, and price.",
   },
   {
     icon: "✦",
@@ -14,12 +14,12 @@ const exclusiveFeatures = [
   {
     icon: "❋",
     title: "Live Tailor Chat",
-    body: "Message our artisans directly. Discuss fabrics, embroidery styles, and personalisation — before you commit.",
+    body: "Message our artisans directly. Discuss fabrics, embroidery styles, and personalisation before you commit.",
   },
   {
     icon: "◇",
     title: "Real-Time Order Tracking",
-    body: "From cutting to stitching to delivery — see exactly where your outfit is at every stage.",
+    body: "From cutting to stitching to delivery, see exactly where your outfit is at every stage.",
   },
   {
     icon: "△",
@@ -112,7 +112,7 @@ export default function DownloadPage() {
                 marginBottom: 40,
               }}
             >
-              This website shows you the surface. The app is where the real experience lives —
+              This website shows you the surface. The app is where the real experience lives, with
               500+ designs, custom measurements, live artisan chat, and doorstep delivery.
             </p>
 

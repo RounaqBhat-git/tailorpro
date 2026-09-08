@@ -113,7 +113,7 @@ const policies: PolicySection[] = [
           Customers may book a visit 1 hour to 30 days in advance. Same-day visits are permitted subject to representative availability.
         </p>
         <p>
-          A 30–45 minute buffer is maintained between visits, which may be extended depending on travel time to the next customer&apos;s location.
+          A 30 to 45 minute buffer is maintained between visits, which may be extended depending on travel time to the next customer&apos;s location.
         </p>
       </div>
     ),
@@ -126,7 +126,7 @@ const policies: PolicySection[] = [
     content: (
       <div>
         <p style={{ marginBottom: 12 }}>
-          Standard turnaround time — from fabric pickup to garment delivery — is <strong>48 hours</strong> (exact timelines by garment category to be finalized by Admin).
+          Standard turnaround time (from fabric pickup to garment delivery) is <strong>48 hours</strong> (exact timelines by garment category to be finalized by Admin).
         </p>
         <p style={{ marginBottom: 12 }}>
           Express/rush stitching may be offered at an additional charge, subject to tailor availability.
@@ -170,7 +170,7 @@ const policies: PolicySection[] = [
           If the fabric is later found insufficient for the requested design, the customer is notified and the design is adjusted, or additional fabric is requested, before stitching begins.
         </p>
         <p>
-          If fabric is damaged due to a tailor&apos;s error during stitching, Tailor Pro will bear the cost of a reasonable resolution — replacement, re-stitching, or compensation — as assessed and approved by the Admin on a case-by-case basis, based on the declared fabric value.
+          If fabric is damaged due to a tailor&apos;s error during stitching, Tailor Pro will bear the cost of a reasonable resolution (replacement, re-stitching, or compensation) as assessed and approved by the Admin on a case-by-case basis, based on the declared fabric value.
         </p>
       </div>
     ),
@@ -240,7 +240,7 @@ const policies: PolicySection[] = [
     content: (
       <div>
         <p style={{ marginBottom: 12 }}>
-          Tailor Pro accepts UPI, Credit Cards, Debit Cards, Net Banking, Digital Wallets, and Cash on Delivery (COD) — payable when the finished garment is picked up.
+          Tailor Pro accepts UPI, Credit Cards, Debit Cards, Net Banking, Digital Wallets, and Cash on Delivery (COD), payable when the finished garment is picked up.
         </p>
         <p>
           Full payment details are displayed before order confirmation.
@@ -299,7 +299,7 @@ const policies: PolicySection[] = [
     category: "fabric",
     content: (
       <p>
-        Customers share a one-time OTP with the tailor at the time of fabric pickup to confirm the handover and prevent fraudulent pickups. A digital fabric receipt — recording fabric type, quantity, and condition — is generated and shared with the customer at this time.
+        Customers share a one-time OTP with the tailor at the time of fabric pickup to confirm the handover and prevent fraudulent pickups. A digital fabric receipt (recording fabric type, quantity, and condition) is generated and shared with the customer at this time.
       </p>
     ),
   },

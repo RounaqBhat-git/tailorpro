@@ -51,15 +51,15 @@ const mainCollections = [
 const pillars = [
   {
     title: "Custom Fit, Always",
-    body: "Nothing leaves our ateliers without going through multiple fittings. Every garment is adjusted until it's perfect — because your body is unique and your clothes should be too.",
+    body: "Nothing leaves our ateliers without going through multiple fittings. Every garment is adjusted until it's perfect, because your body is unique and your clothes should be too.",
   },
   {
     title: "Sourced from Kashmir",
-    body: "We use only the finest fabrics from Kashmir's renowned mills — pure pashmina, hand-woven silk, and premium cotton. Sourcing locally means supporting artisan communities.",
+    body: "We use only the finest fabrics from Kashmir's renowned mills, such as pure pashmina, hand-woven silk, and premium cotton. Sourcing locally means supporting artisan communities.",
   },
   {
     title: "Generational Craftsmanship",
-    body: "Our embroidery specialists are second and third-generation artisans. Techniques like sozni, tilla, and kasida are not just skills — they are living traditions.",
+    body: "Our embroidery specialists are second and third-generation artisans. Techniques like sozni, tilla, and kasida are not just skills; they are living traditions.",
   },
 ];
 
@@ -130,7 +130,7 @@ export default function CollectionsPage() {
               lineHeight: 1.8,
             }}
           >
-            Explore our signature bespoke collections — featuring authentic Kashmiri craftsmanship,
+            Explore our signature bespoke collections featuring authentic Kashmiri craftsmanship,
             handcrafted embroidery, and made-to-measure elegance.
           </p>
           <Link href="/download" className="btn-gold">

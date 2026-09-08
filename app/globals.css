@@ -216,6 +216,7 @@ body {
   background: rgba(201,168,76,0.06);
   transition: border-color 0.2s, background 0.2s, transform 0.15s;
   cursor: default;
+  white-space: nowrap;
 }
 .feature-chip:hover {
   border-color: rgba(201,168,76,0.6);

@@ -37,7 +37,7 @@ const reviews = [
     rating: 5,
   },
   {
-    text: "Ordered a kashmiri pheran for my mother. She was moved to tears — it reminded her of her childhood. Thank you.",
+    text: "Ordered a kashmiri pheran for my mother. She was moved to tears, as it reminded her of her childhood. Thank you.",
     name: "Imran Qadri",
     location: "Bangalore",
     initials: "IQ",
@@ -51,7 +51,7 @@ const reviews = [
     rating: 5,
   },
   {
-    text: "Fast delivery, premium quality, and the fit was like it was made exactly for me — because it was. Highly recommend.",
+    text: "Fast delivery, premium quality, and the fit was like it was made exactly for me, because it was. Highly recommend.",
     name: "Zubair Shah",
     location: "Pune",
     initials: "ZS",

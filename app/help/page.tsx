@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Help Center — Tailor Pro",
+  title: "Help Center | Tailor Pro",
   description:
-    "Tailor Pro Help Center — Get assistance with home visits, order tracking, measurements, fabric pickup, and customer support.",
+    "Tailor Pro Help Center: Get assistance with home visits, order tracking, measurements, fabric pickup, and customer support.",
 };
 
 export default function HelpPage() {
@@ -186,7 +186,7 @@ export default function HelpPage() {
               Direct Contact Channels
             </h3>
             <p style={{ fontSize: 14, color: "rgba(255,255,255,0.7)", maxWidth: 500, margin: "0 auto 28px" }}>
-              Our customer care desk is open Monday to Saturday, 9:00 AM – 7:00 PM IST.
+              Our customer care desk is open Monday to Saturday, 9:00 AM to 7:00 PM IST.
             </p>
 
             <div style={{ display: "flex", gap: 32, justifyContent: "center", flexWrap: "wrap" }}>

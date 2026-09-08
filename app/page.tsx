@@ -163,7 +163,7 @@ const processSteps = [
   {
     n: "01",
     title: "Choose Your Design",
-    body: "Browse our curated catalog inside the app — 500+ designs across every category.",
+    body: "Browse our curated catalog inside the app, with 500+ designs across every category.",
   },
   {
     n: "02",
@@ -178,7 +178,7 @@ const processSteps = [
   {
     n: "04",
     title: "Delivered To You",
-    body: "Your outfit arrives at your doorstep in 7–10 days, perfectly finished.",
+    body: "Your outfit arrives at your doorstep in 7 to 10 days, perfectly finished.",
   },
 ];
 
@@ -345,7 +345,7 @@ export default function HomePage() {
               marginBottom: 32,
             }}
           >
-            Custom-stitched Pherans, bridal wear &amp; ethnic outfits — crafted by
+            Custom-stitched Pherans, bridal wear &amp; ethnic outfits, crafted by
             master artisans with 30+ years of tradition.
           </p>
 
@@ -377,7 +377,7 @@ export default function HomePage() {
               Download The App
             </Link>
             <Link href="/collections" className="btn-ghost">
-              See Collections
+              Services
             </Link>
           </div>
         </div>
@@ -409,13 +409,13 @@ export default function HomePage() {
             </h2>
             <div className="gold-rule" style={{ marginBottom: 28 }} />
             <p style={{ fontSize: 15, color: "#666", lineHeight: 1.9, marginBottom: 20 }}>
-              Founded in the heart of Srinagar, Tailor Pro was built on a single belief — that
+              Founded in the heart of Srinagar, Tailor Pro was built on a single belief: that
               clothing should be crafted precisely for the person who wears it. Not off a rack,
               not in bulk. Just for you.
             </p>
             <p style={{ fontSize: 15, color: "#666", lineHeight: 1.9, marginBottom: 36 }}>
-              Our artisans draw on generations of Kashmiri craftsmanship — sozni needlework,
-              tilla embroidery, hand-woven pashmina — to create garments that carry the soul
+              Our artisans draw on generations of Kashmiri craftsmanship, such as sozni needlework,
+              tilla embroidery, and hand-woven pashmina, to create garments that carry the soul
               of the valley.
             </p>
             <div style={{ display: "flex", gap: 40 }}>
@@ -492,7 +492,7 @@ export default function HomePage() {
               Something for Every Occasion
             </h2>
             <p style={{ fontSize: 14, color: "#888", marginTop: 12, maxWidth: 440, margin: "12px auto 0" }}>
-              From everyday elegance to once-in-a-lifetime moments — explore the full range inside the app.
+              From everyday elegance to once-in-a-lifetime moments, explore the full range inside the app.
             </p>
           </div>
 
@@ -871,7 +871,7 @@ export default function HomePage() {
             }}
           >
             Every bride deserves a garment that fits her story. Our master tailors work with you
-            personally — from the first sketch to the final fitting.
+            personally, from the first sketch to the final fitting.
           </p>
           <div style={{ display: "flex", gap: 16, flexWrap: "wrap", justifyContent: "center" }}>
             <Link href="/bridal" className="btn-gold">
@@ -899,7 +899,7 @@ export default function HomePage() {
               From Idea to <span style={{ color: "#c9a84c" }}>Doorstep</span>
             </h2>
             <p style={{ fontSize: 15, color: "#888", maxWidth: 480, margin: "0 auto" }}>
-              A seamless experience — designed around you, from the first tap to the final stitch.
+              A seamless experience designed around you, from the first tap to the final stitch.
             </p>
           </div>
 
@@ -1062,12 +1062,20 @@ export default function HomePage() {
               <span style={{ color: "#c9a84c" }}>One App.</span>
             </h2>
             <p style={{ fontSize: 15, color: "rgba(255,255,255,0.6)", lineHeight: 1.9, maxWidth: 440, marginBottom: 40 }}>
-              The website gives you a taste. The app gives you everything — full catalog, custom measurements,
+              The website gives you a taste. The app gives you everything: full catalog, custom measurements,
               live chat with artisans, order tracking, and home consultations.
             </p>
 
             {/* App store badges — glass style */}
-            <div className="flex flex-wrap gap-3.5 mb-10 justify-center lg:justify-start">
+            <div
+              className="justify-center lg:justify-start"
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                gap: 14,
+                marginBottom: 28,
+              }}
+            >
               <a href="#" className="badge-glass">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff">
                   <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
@@ -1092,7 +1100,14 @@ export default function HomePage() {
             </div>
 
             {/* Feature chips */}
-            <div className="flex flex-wrap gap-2.5 justify-center lg:justify-start">
+            <div
+              className="justify-center lg:justify-start"
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                gap: "12px 10px",
+              }}
+            >
               {[
                 { icon: "✦", label: "500+ curated designs" },
                 { icon: "💬", label: "Live tailor chat" },

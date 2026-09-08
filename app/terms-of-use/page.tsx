@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Terms & Conditions — Tailor Pro",
+  title: "Terms & Conditions | Tailor Pro",
   description:
     "Read Tailor Pro's Terms & Conditions, Refund Policy, Cancellation & Rescheduling, Fabric Handling, Safety, and Payment policies.",
 };
@@ -338,7 +338,7 @@ export default function TermsPage() {
                 <li>Customers supply their own fabric for stitching.</li>
                 <li>Fabric quantity and condition are inspected and acknowledged by both parties at the time of pickup.</li>
                 <li>Tailor Pro is not responsible for pre-existing defects in customer-supplied fabric that were not identified at pickup.</li>
-                <li>In the event of fabric damage or loss caused by Tailor Pro&apos;s error, the Admin will assess and approve an appropriate resolution — replacement, re-stitching, or compensation — based on the declared value of the fabric.</li>
+                <li>In the event of fabric damage or loss caused by Tailor Pro&apos;s error, the Admin will assess and approve an appropriate resolution (replacement, re-stitching, or compensation) based on the declared value of the fabric.</li>
               </ul>
             </article>
 

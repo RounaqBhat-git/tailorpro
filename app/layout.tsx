@@ -19,7 +19,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Tailor Pro — Kashmir's Finest Custom Clothing",
+  title: "Tailor Pro | Kashmir's Finest Custom Clothing",
   description:
     "Custom-stitched Pherans, bridal wear & ethnic outfits crafted by master artisans with 30+ years of tradition. Download the Tailor Pro app today.",
 };

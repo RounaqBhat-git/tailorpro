@@ -31,12 +31,12 @@ const experience = [
   },
   {
     title: "Custom Embroidery",
-    body: "Your initials, a date, or a motif of significance — our artisans can weave it into the design.",
+    body: "Your initials, a date, or a motif of significance, woven into the design by our artisans.",
     icon: "❋",
   },
   {
     title: "Ceremony to Reception",
-    body: "We coordinate your entire bridal wardrobe — from the wedding look to mehendi, sangeet, and reception outfits.",
+    body: "We coordinate your entire bridal wardrobe, from the wedding look to mehendi, sangeet, and reception outfits.",
     icon: "◇",
   },
 ];
@@ -120,7 +120,7 @@ export default function BridalPage() {
             }}
           >
             Every bride deserves a garment that fits her story perfectly.
-            Our master tailors work with you personally — from the first sketch to the final fitting.
+            Our master tailors work with you personally, from the first sketch to the final fitting.
           </p>
           <Link href="/download" className="btn-gold">
             Book Your Bridal Consultation
@@ -178,7 +178,7 @@ export default function BridalPage() {
                 marginBottom: 16,
               }}
             >
-              Bridal wear at Tailor Pro is not a transaction — it&apos;s a collaboration. We take time
+              Bridal wear at Tailor Pro is not a transaction; it&apos;s a collaboration. We take time
               to understand you: your family traditions, your aesthetic, your comfort level, and the
               emotions you want to carry on your wedding day.
             </p>

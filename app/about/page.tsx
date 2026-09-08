@@ -28,7 +28,7 @@ const values = [
   },
   {
     title: "Precision",
-    body: "Every garment is measured, cut, and fitted multiple times. A perfect fit is not optional — it is the minimum.",
+    body: "Every garment is measured, cut, and fitted multiple times. A perfect fit is not optional; it is the minimum.",
   },
   {
     title: "Community",
@@ -164,7 +164,7 @@ export default function AboutPage() {
             <div className="gold-rule" style={{ marginBottom: 24 }} />
             <p style={{ fontSize: 15, color: "#555", lineHeight: 1.9, marginBottom: 18 }}>
               Gulzar Ahmed opened his first workshop on Residency Road, Srinagar, in 1992. There
-              were no apps, no websites — just a measuring tape, a sewing machine, and a reputation
+              were no apps, no websites, just a measuring tape, a sewing machine, and a reputation
               for getting the fit exactly right.
             </p>
             <p style={{ fontSize: 15, color: "#555", lineHeight: 1.9, marginBottom: 18 }}>

@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Privacy Policy — Tailor Pro",
+  title: "Privacy Policy | Tailor Pro",
   description:
     "Tailor Pro's Privacy Policy describes how we collect, protect, and use your personal information and measurement data.",
 };
