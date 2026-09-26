@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Help Center | Tailor Pro",
+  title: "Help Center | Elanza - From Fabric to Form",
   description:
-    "Tailor Pro Help Center: Get assistance with home visits, order tracking, measurements, fabric pickup, and customer support.",
+    "Elanza - From Fabric to Form Help Center: Get assistance with home visits, order tracking, measurements, fabric pickup, and customer support.",
 };
 
 export default function HelpPage() {
@@ -77,7 +77,7 @@ export default function HelpPage() {
               marginBottom: 16,
             }}
           >
-            Tailor Pro <span style={{ color: "#c9a84c" }}>Help Center</span>
+            Elanza - From Fabric to Form <span style={{ color: "#c9a84c" }}>Help Center</span>
           </h1>
 
           <p
@@ -192,8 +192,8 @@ export default function HelpPage() {
             <div style={{ display: "flex", gap: 32, justifyContent: "center", flexWrap: "wrap" }}>
               <div>
                 <div style={{ fontSize: 12, color: "#c9a84c", fontWeight: 700 }}>EMAIL US</div>
-                <a href="mailto:hello@tailorpro.in" style={{ fontSize: 16, color: "#fff", textDecoration: "none", fontWeight: 600 }}>
-                  hello@tailorpro.in
+                <a href="mailto:hello@elanza.in" style={{ fontSize: 16, color: "#fff", textDecoration: "none", fontWeight: 600 }}>
+                  hello@elanza.in
                 </a>
               </div>
 

@@ -319,7 +319,7 @@ export default function CollectionsPage() {
               </p>
             </div>
             <Link href="/download" className="btn-gold" style={{ flexShrink: 0 }}>
-              Download Tailor Pro App
+              Download Elanza - From Fabric to Form App
             </Link>
           </div>
         </div>
@@ -346,7 +346,7 @@ export default function CollectionsPage() {
               className="font-serif"
               style={{ fontSize: "clamp(26px, 3vw, 38px)", fontWeight: 700, color: "#2c2c2c" }}
             >
-              Why Tailor Pro is Different
+              Why Elanza - From Fabric to Form is Different
             </h2>
           </div>
 

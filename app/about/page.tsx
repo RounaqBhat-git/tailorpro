@@ -4,7 +4,7 @@ const team = [
   {
     name: "Gulzar Ahmed",
     role: "Founder & Master Tailor",
-    bio: "35+ years crafting bespoke garments in Srinagar. Gulzar founded Tailor Pro to preserve Kashmiri artisanship for the next generation.",
+    bio: "35+ years crafting bespoke garments in Srinagar. Gulzar founded Elanza - From Fabric to Form to preserve Kashmiri artisanship for the next generation.",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
   },
   {
@@ -173,7 +173,7 @@ export default function AboutPage() {
               never changed: every garment is made for one person, fitted to one body, finished by hand.
             </p>
             <p style={{ fontSize: 15, color: "#555", lineHeight: 1.9 }}>
-              Today, Tailor Pro has over 50 artisans, a design studio, and an app that brings this
+              Today, Elanza - From Fabric to Form has over 50 artisans, a design studio, and an app that brings this
               experience to anyone across India. The workshop on Residency Road still runs. The measuring
               tape still matters most.
             </p>
@@ -383,7 +383,7 @@ export default function AboutPage() {
               marginBottom: 16,
             }}
           >
-            ✦ EXPERIENCE TAILOR PRO ✦
+            ✦ EXPERIENCE ELANZA - FROM FABRIC TO FORM ✦
           </div>
           <h2
             className="font-serif"
@@ -408,7 +408,7 @@ export default function AboutPage() {
             Download the app and connect with our master artisans directly.
           </p>
           <Link href="/download" className="btn-gold">
-            Download Tailor Pro
+            Download Elanza - From Fabric to Form
           </Link>
         </div>
       </section>

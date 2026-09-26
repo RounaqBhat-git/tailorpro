@@ -23,9 +23,9 @@ const faqs: FAQItem[] = [
   {
     id: 1,
     category: "general",
-    question: "What is Tailor Pro?",
+    question: "What is Elanza - From Fabric to Form?",
     answer:
-      "Tailor Pro is a home-visit stitching platform that sends professional tailors to your location to take measurements, collect fabric, and later deliver your finished, custom-stitched garment.",
+      "Elanza - From Fabric to Form is a home-visit stitching platform that sends professional tailors to your location to take measurements, collect fabric, and later deliver your finished, custom-stitched garment.",
   },
   {
     id: 2,
@@ -88,14 +88,14 @@ const faqs: FAQItem[] = [
     category: "safety",
     question: "Are your tailors verified?",
     answer:
-      "Yes. Every tailor completes Government ID verification, Police verification, Background verification, and a Stitching Skill Assessment before joining Tailor Pro.",
+      "Yes. Every tailor completes Government ID verification, Police verification, Background verification, and a Stitching Skill Assessment before joining Elanza - From Fabric to Form.",
   },
   {
     id: 9,
     category: "payments",
     question: "What payment methods are accepted?",
     answer:
-      "Tailor Pro accepts UPI, Credit Cards, Debit Cards, Net Banking, Digital Wallets, and Cash on Delivery.",
+      "Elanza - From Fabric to Form accepts UPI, Credit Cards, Debit Cards, Net Banking, Digital Wallets, and Cash on Delivery.",
   },
   {
     id: 10,
@@ -130,14 +130,14 @@ const faqs: FAQItem[] = [
     category: "fabric",
     question: "Do I need to provide my own fabric?",
     answer:
-      "Yes. Tailor Pro currently offers stitching services only, so customers must provide their own fabric, which is inspected and acknowledged by the tailor at pickup.",
+      "Yes. Elanza - From Fabric to Form currently offers stitching services only, so customers must provide their own fabric, which is inspected and acknowledged by the tailor at pickup.",
   },
   {
     id: 15,
     category: "fabric",
     question: "What happens if my fabric is damaged during stitching?",
     answer:
-      "If damage results from a tailor's error, Tailor Pro's Admin will assess the case and arrange a suitable resolution, such as replacement, re-stitching, or compensation.",
+      "If damage results from a tailor's error, Elanza - From Fabric to Form's Admin will assess the case and arrange a suitable resolution, such as replacement, re-stitching, or compensation.",
   },
   {
     id: 16,
@@ -158,14 +158,14 @@ const faqs: FAQItem[] = [
     category: "safety",
     question: "How can I contact customer support?",
     answer:
-      "You can contact Tailor Pro through the in-app support section, customer support email, or the official support phone number during business hours.",
+      "You can contact Elanza - From Fabric to Form through the in-app support section, customer support email, or the official support phone number during business hours.",
   },
   {
     id: 19,
     category: "safety",
     question: "What happens in case of an emergency?",
     answer:
-      "Tailor Pro provides an SOS feature for tailors. When activated, the Admin is immediately notified, and appropriate action is taken to ensure the safety of all parties involved.",
+      "Elanza - From Fabric to Form provides an SOS feature for tailors. When activated, the Admin is immediately notified, and appropriate action is taken to ensure the safety of all parties involved.",
   },
 ];
 
@@ -627,7 +627,7 @@ export default function FAQPage() {
                 Download App & Support
               </Link>
               <a
-                href="mailto:hello@tailorpro.in"
+                href="mailto:hello@elanza.in"
                 className="btn-ghost"
               >
                 Email Customer Care

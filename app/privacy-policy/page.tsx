@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Privacy Policy | Tailor Pro",
+  title: "Privacy Policy | Elanza - From Fabric to Form",
   description:
-    "Tailor Pro's Privacy Policy describes how we collect, protect, and use your personal information and measurement data.",
+    "Elanza - From Fabric to Form's Privacy Policy describes how we collect, protect, and use your personal information and measurement data.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -89,7 +89,7 @@ export default function PrivacyPolicyPage() {
               margin: "0 auto 20px",
             }}
           >
-            At Tailor Pro, we value your privacy and are committed to protecting your personal information.
+            At Elanza - From Fabric to Form, we value your privacy and are committed to protecting your personal information.
           </p>
 
           <div
@@ -140,7 +140,7 @@ export default function PrivacyPolicyPage() {
               Information We Collect & Privacy Commitment
             </h2>
             <p style={{ fontSize: 14.5, color: "#444", lineHeight: 1.8, marginBottom: 16 }}>
-              At Tailor Pro, we value your privacy and are committed to protecting your personal information. We collect only the information necessary to provide our stitching services, including your name, contact details, address, body measurements, order history, and payment information.
+              At Elanza - From Fabric to Form, we value your privacy and are committed to protecting your personal information. We collect only the information necessary to provide our stitching services, including your name, contact details, address, body measurements, order history, and payment information.
             </p>
 
             <div style={{ background: "rgba(201,168,76,0.06)", borderLeft: "3px solid #c9a84c", padding: "16px 20px", borderRadius: "0 12px 12px 0", marginBottom: 16 }}>
@@ -148,7 +148,7 @@ export default function PrivacyPolicyPage() {
                 Payment Security:
               </div>
               <div style={{ fontSize: 13.5, color: "#555", lineHeight: 1.7 }}>
-                Payment details are processed securely through our payment gateway partners and are not stored on Tailor Pro&apos;s servers.
+                Payment details are processed securely through our payment gateway partners and are not stored on Elanza - From Fabric to Form&apos;s servers.
               </div>
             </div>
 
@@ -214,7 +214,7 @@ export default function PrivacyPolicyPage() {
               Data Sharing & Non-Disclosure
             </h2>
             <p style={{ fontSize: 14.5, color: "#444", lineHeight: 1.8, marginBottom: 16 }}>
-              Tailor Pro does not sell customer data to third parties. Information is shared only with authorized tailors and trusted service providers when necessary to deliver the requested services.
+              Elanza - From Fabric to Form does not sell customer data to third parties. Information is shared only with authorized tailors and trusted service providers when necessary to deliver the requested services.
             </p>
           </article>
 
@@ -232,7 +232,7 @@ export default function PrivacyPolicyPage() {
               Questions About Privacy?
             </h3>
             <p style={{ fontSize: 14, color: "rgba(255,255,255,0.7)", marginBottom: 24 }}>
-              Review our Terms of Use or contact our compliance desk at hello@tailorpro.in
+              Review our Terms of Use or contact our compliance desk at hello@elanza.in
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
               <Link href="/terms-of-use" className="btn-gold">

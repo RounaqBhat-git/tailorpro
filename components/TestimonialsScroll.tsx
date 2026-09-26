@@ -9,7 +9,7 @@ const reviews = [
     rating: 5,
   },
   {
-    text: "Tailor Pro transformed my bridal experience. Each outfit was crafted with such love and precision. Truly royal.",
+    text: "Elanza - From Fabric to Form transformed my bridal experience. Each outfit was crafted with such love and precision. Truly royal.",
     name: "Ruhi Bhat",
     location: "Delhi",
     initials: "RB",

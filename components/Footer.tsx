@@ -46,10 +46,10 @@ export default function Footer() {
                   color: "#fff",
                 }}
               >
-                Tailor Pro
+                Elanza
               </div>
               <div style={{ fontSize: 9, letterSpacing: "0.15em", color: "#c9a84c", fontWeight: 600 }}>
-                KASHMIR&apos;S FINEST
+                FROM FABRIC TO FORM
               </div>
             </div>
           </div>
@@ -95,7 +95,7 @@ export default function Footer() {
           {[
             "Residency Road, Srinagar",
             "Kashmir, 190001",
-            "hello@tailorpro.in",
+            "hello@elanza.in",
             "+91 94190 00000",
           ].map((line) => (
             <div
@@ -150,7 +150,7 @@ export default function Footer() {
         }}
       >
         <div style={{ fontSize: 12, color: "rgba(255,255,255,0.3)" }}>
-          © 2024 Tailor Pro. All rights reserved.
+          © 2024 Elanza - From Fabric to Form. All rights reserved.
         </div>
         <div style={{ display: "flex", gap: 24 }}>
           {["Privacy Policy", "Terms of Use"].map((t) => (

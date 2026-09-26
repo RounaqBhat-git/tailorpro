@@ -48,7 +48,7 @@ const policies: PolicySection[] = [
     content: (
       <div>
         <p style={{ marginBottom: 12 }}>
-          Tailor Pro offers a <strong>5% First Order Discount</strong> and a <strong>5% Referral Reward Discount</strong>.
+          Elanza - From Fabric to Form offers a <strong>5% First Order Discount</strong> and a <strong>5% Referral Reward Discount</strong>.
         </p>
         <ul style={{ paddingLeft: 20, display: "flex", flexDirection: "column", gap: 6 }}>
           <li>Coupons cannot be combined or stacked.</li>
@@ -65,7 +65,7 @@ const policies: PolicySection[] = [
     category: "orders",
     content: (
       <p>
-        Tailor Pro does not offer subscription or membership plans in the current phase. All services are booked and charged on a per-order basis.
+        Elanza - From Fabric to Form does not offer subscription or membership plans in the current phase. All services are booked and charged on a per-order basis.
       </p>
     ),
   },
@@ -164,13 +164,13 @@ const policies: PolicySection[] = [
           Customers provide their own fabric. Fabric quantity and condition are jointly inspected and digitally acknowledged (photo/checklist) by the customer and tailor at the time of pickup.
         </p>
         <p style={{ marginBottom: 12 }}>
-          Tailor Pro is not liable for pre-existing fabric defects (e.g., shrinkage, colour bleeding, insufficient quantity) that were not identified at pickup.
+          Elanza - From Fabric to Form is not liable for pre-existing fabric defects (e.g., shrinkage, colour bleeding, insufficient quantity) that were not identified at pickup.
         </p>
         <p style={{ marginBottom: 12 }}>
           If the fabric is later found insufficient for the requested design, the customer is notified and the design is adjusted, or additional fabric is requested, before stitching begins.
         </p>
         <p>
-          If fabric is damaged due to a tailor&apos;s error during stitching, Tailor Pro will bear the cost of a reasonable resolution (replacement, re-stitching, or compensation) as assessed and approved by the Admin on a case-by-case basis, based on the declared fabric value.
+          If fabric is damaged due to a tailor&apos;s error during stitching, Elanza - From Fabric to Form will bear the cost of a reasonable resolution (replacement, re-stitching, or compensation) as assessed and approved by the Admin on a case-by-case basis, based on the declared fabric value.
         </p>
       </div>
     ),
@@ -193,7 +193,7 @@ const policies: PolicySection[] = [
     category: "payments",
     content: (
       <p>
-        Tailor Pro does not currently provide an in-app wallet. Refunds are processed only to the customer&apos;s original payment method. Promotional credits and wallet balances are not supported in the current release.
+        Elanza - From Fabric to Form does not currently provide an in-app wallet. Refunds are processed only to the customer&apos;s original payment method. Promotional credits and wallet balances are not supported in the current release.
       </p>
     ),
   },
@@ -240,7 +240,7 @@ const policies: PolicySection[] = [
     content: (
       <div>
         <p style={{ marginBottom: 12 }}>
-          Tailor Pro accepts UPI, Credit Cards, Debit Cards, Net Banking, Digital Wallets, and Cash on Delivery (COD), payable when the finished garment is picked up.
+          Elanza - From Fabric to Form accepts UPI, Credit Cards, Debit Cards, Net Banking, Digital Wallets, and Cash on Delivery (COD), payable when the finished garment is picked up.
         </p>
         <p>
           Full payment details are displayed before order confirmation.
@@ -255,7 +255,7 @@ const policies: PolicySection[] = [
     category: "payments",
     content: (
       <p>
-        Tailor Pro does not currently support tipping through the application. Customers are not provided with an in-app tipping option.
+        Elanza - From Fabric to Form does not currently support tipping through the application. Customers are not provided with an in-app tipping option.
       </p>
     ),
   },
@@ -354,7 +354,7 @@ const policies: PolicySection[] = [
     category: "operations",
     content: (
       <p>
-        Services are available only within Tailor Pro&apos;s designated operational zones. Bookings outside these areas cannot be confirmed.
+        Services are available only within Elanza - From Fabric to Form&apos;s designated operational zones. Bookings outside these areas cannot be confirmed.
       </p>
     ),
   },
@@ -470,7 +470,7 @@ export default function BusinessPolicyPage() {
               margin: "0 auto 32px",
             }}
           >
-            Comprehensive operational rules, refund policies, scheduling parameters, fabric liability standards, and service guidelines for Tailor Pro.
+            Comprehensive operational rules, refund policies, scheduling parameters, fabric liability standards, and service guidelines for Elanza - From Fabric to Form.
           </p>
 
           {/* Search Input */}

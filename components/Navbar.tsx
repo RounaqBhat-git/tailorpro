@@ -83,7 +83,7 @@ export default function Navbar() {
                 transition: "color 0.3s",
               }}
             >
-              Tailor Pro
+              Elanza
             </div>
             <div
               style={{
@@ -93,7 +93,7 @@ export default function Navbar() {
                 fontWeight: 600,
               }}
             >
-              KASHMIR&apos;S FINEST
+              FROM FABRIC TO FORM
             </div>
           </div>
         </Link>

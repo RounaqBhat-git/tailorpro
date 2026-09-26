@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Terms & Conditions | Tailor Pro",
+  title: "Terms & Conditions | Elanza - From Fabric to Form",
   description:
-    "Read Tailor Pro's Terms & Conditions, Refund Policy, Cancellation & Rescheduling, Fabric Handling, Safety, and Payment policies.",
+    "Read Elanza - From Fabric to Form's Terms & Conditions, Refund Policy, Cancellation & Rescheduling, Fabric Handling, Safety, and Payment policies.",
 };
 
 const sections = [
@@ -101,7 +101,7 @@ export default function TermsPage() {
               margin: "0 auto 20px",
             }}
           >
-            Please read these terms and guidelines carefully. By accessing or using the Tailor Pro mobile application or platform, you agree to be bound by these policies.
+            Please read these terms and guidelines carefully. By accessing or using the Elanza - From Fabric to Form mobile application or platform, you agree to be bound by these policies.
           </p>
 
           <div
@@ -224,7 +224,7 @@ export default function TermsPage() {
                 Terms & Conditions
               </h2>
               <p style={{ fontSize: 14.5, color: "#666", lineHeight: 1.8, marginBottom: 20 }}>
-                By accessing or using the Tailor Pro application, you agree to comply with and be bound by these Terms & Conditions:
+                By accessing or using the Elanza - From Fabric to Form application, you agree to comply with and be bound by these Terms & Conditions:
               </p>
 
               <ul style={{ paddingLeft: 20, display: "flex", flexDirection: "column", gap: 14, fontSize: 14, color: "#444", lineHeight: 1.7 }}>
@@ -233,9 +233,9 @@ export default function TermsPage() {
                 <li>Customers are responsible for ensuring that the service location is safe and accessible.</li>
                 <li>Customers are responsible for providing sufficient fabric of suitable quality for the requested garment.</li>
                 <li>Customers must treat tailors with respect and professionalism.</li>
-                <li>Tailor Pro reserves the right to refuse service or suspend accounts for fraudulent, abusive, or inappropriate behaviour.</li>
+                <li>Elanza - From Fabric to Form reserves the right to refuse service or suspend accounts for fraudulent, abusive, or inappropriate behaviour.</li>
                 <li>Service prices displayed in the application are subject to change without prior notice.</li>
-                <li>Tailor Pro is a platform connecting customers with verified tailoring professionals and is not liable for delays caused by unforeseen circumstances beyond its reasonable control.</li>
+                <li>Elanza - From Fabric to Form is a platform connecting customers with verified tailoring professionals and is not liable for delays caused by unforeseen circumstances beyond its reasonable control.</li>
               </ul>
             </article>
 
@@ -282,7 +282,7 @@ export default function TermsPage() {
 
               <ul style={{ paddingLeft: 20, display: "flex", flexDirection: "column", gap: 12, fontSize: 14, color: "#444", lineHeight: 1.7 }}>
                 <li>If cancelled after fabric pickup but before stitching begins, the fabric is returned and the stitching charge alone is refunded, less a handling fee.</li>
-                <li>Refunds are processed only to the original payment method after approval by the Tailor Pro Admin.</li>
+                <li>Refunds are processed only to the original payment method after approval by the Elanza - From Fabric to Form Admin.</li>
                 <li>Refund processing times may vary depending on the payment provider.</li>
               </ul>
             </article>
@@ -310,7 +310,7 @@ export default function TermsPage() {
               <ul style={{ paddingLeft: 20, display: "flex", flexDirection: "column", gap: 14, fontSize: 14, color: "#444", lineHeight: 1.7 }}>
                 <li>Customers may reschedule a home visit at least 6 hours before the scheduled time, subject to tailor availability.</li>
                 <li>Same-day visits may also be rescheduled provided the request is made more than six hours before the visit and an alternative slot is available.</li>
-                <li>Tailors are not permitted to cancel confirmed visits except under exceptional circumstances managed directly by the Tailor Pro Admin.</li>
+                <li>Tailors are not permitted to cancel confirmed visits except under exceptional circumstances managed directly by the Elanza - From Fabric to Form Admin.</li>
               </ul>
             </article>
 
@@ -337,8 +337,8 @@ export default function TermsPage() {
               <ul style={{ paddingLeft: 20, display: "flex", flexDirection: "column", gap: 14, fontSize: 14, color: "#444", lineHeight: 1.7 }}>
                 <li>Customers supply their own fabric for stitching.</li>
                 <li>Fabric quantity and condition are inspected and acknowledged by both parties at the time of pickup.</li>
-                <li>Tailor Pro is not responsible for pre-existing defects in customer-supplied fabric that were not identified at pickup.</li>
-                <li>In the event of fabric damage or loss caused by Tailor Pro&apos;s error, the Admin will assess and approve an appropriate resolution (replacement, re-stitching, or compensation) based on the declared value of the fabric.</li>
+                <li>Elanza - From Fabric to Form is not responsible for pre-existing defects in customer-supplied fabric that were not identified at pickup.</li>
+                <li>In the event of fabric damage or loss caused by Elanza - From Fabric to Form&apos;s error, the Admin will assess and approve an appropriate resolution (replacement, re-stitching, or compensation) based on the declared value of the fabric.</li>
               </ul>
             </article>
 
@@ -363,7 +363,7 @@ export default function TermsPage() {
                 Safety Policy
               </h2>
               <p style={{ fontSize: 14.5, color: "#555", lineHeight: 1.8, marginBottom: 20 }}>
-                Safety and trust are core pillars of the Tailor Pro platform. Every tailor undergoes a mandatory 4-step verification process before joining:
+                Safety and trust are core pillars of the Elanza - From Fabric to Form platform. Every tailor undergoes a mandatory 4-step verification process before joining:
               </p>
 
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: 12, marginBottom: 24 }}>
@@ -395,7 +395,7 @@ export default function TermsPage() {
               </div>
 
               <ul style={{ paddingLeft: 20, display: "flex", flexDirection: "column", gap: 14, fontSize: 14, color: "#444", lineHeight: 1.7 }}>
-                <li>The application includes an SOS feature that allows tailors to immediately notify the Tailor Pro support team during emergencies.</li>
+                <li>The application includes an SOS feature that allows tailors to immediately notify the Elanza - From Fabric to Form support team during emergencies.</li>
                 <li>Any reports of harassment, misconduct, fraud, or unsafe behaviour may result in temporary suspension of the customer account while an investigation is conducted.</li>
               </ul>
             </article>
@@ -421,7 +421,7 @@ export default function TermsPage() {
                 Payment Policy
               </h2>
               <p style={{ fontSize: 14.5, color: "#555", lineHeight: 1.8, marginBottom: 16 }}>
-                Tailor Pro accepts multiple secure digital and cash payment options:
+                Elanza - From Fabric to Form accepts multiple secure digital and cash payment options:
               </p>
 
               <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 24 }}>
@@ -470,14 +470,14 @@ export default function TermsPage() {
                 Limitation of Liability
               </h2>
               <p style={{ fontSize: 14.5, color: "#555", lineHeight: 1.8, marginBottom: 16 }}>
-                Tailor Pro makes every effort to provide reliable and professional stitching services. However, Tailor Pro shall not be liable for losses resulting from:
+                Elanza - From Fabric to Form makes every effort to provide reliable and professional stitching services. However, Elanza - From Fabric to Form shall not be liable for losses resulting from:
               </p>
 
               <ul style={{ paddingLeft: 20, display: "flex", flexDirection: "column", gap: 14, fontSize: 14, color: "#444", lineHeight: 1.7 }}>
                 <li>Incorrect customer information or measurements provided by the customer.</li>
                 <li>Pre-existing defects or insufficient quantity in customer-supplied fabric not identified at the time of pickup.</li>
                 <li>Delays caused by traffic, weather, or emergencies.</li>
-                <li>Events beyond Tailor Pro&apos;s reasonable control.</li>
+                <li>Events beyond Elanza - From Fabric to Form&apos;s reasonable control.</li>
               </ul>
             </article>
 
@@ -503,7 +503,7 @@ export default function TermsPage() {
                 Our support team is available to assist you with any legal, order, or safety queries.
               </p>
               <div style={{ display: "flex", gap: 16, justifyContent: "center" }}>
-                <a href="mailto:hello@tailorpro.in" className="btn-gold">
+                <a href="mailto:hello@elanza.in" className="btn-gold">
                   Contact Legal Support
                 </a>
               </div>

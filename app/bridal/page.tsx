@@ -154,7 +154,7 @@ export default function BridalPage() {
                 marginBottom: 14,
               }}
             >
-              THE TAILOR PRO PROMISE
+              THE ELANZA - FROM FABRIC TO FORM PROMISE
             </div>
             <h2
               className="font-serif"
@@ -178,7 +178,7 @@ export default function BridalPage() {
                 marginBottom: 16,
               }}
             >
-              Bridal wear at Tailor Pro is not a transaction; it&apos;s a collaboration. We take time
+              Bridal wear at Elanza - From Fabric to Form is not a transaction; it&apos;s a collaboration. We take time
               to understand you: your family traditions, your aesthetic, your comfort level, and the
               emotions you want to carry on your wedding day.
             </p>
@@ -446,7 +446,7 @@ export default function BridalPage() {
             senior designer.
           </p>
           <Link href="/download" className="btn-gold">
-            Download Tailor Pro
+            Download Elanza - From Fabric to Form
           </Link>
         </div>
       </section>

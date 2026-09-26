@@ -19,9 +19,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Tailor Pro | Kashmir's Finest Custom Clothing",
+  title: "Elanza - From Fabric to Form | Kashmir's Finest Custom Clothing",
   description:
-    "Custom-stitched Pherans, bridal wear & ethnic outfits crafted by master artisans with 30+ years of tradition. Download the Tailor Pro app today.",
+    "Custom-stitched Pherans, bridal wear & ethnic outfits crafted by master artisans with 30+ years of tradition. Download the Elanza - From Fabric to Form app today.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

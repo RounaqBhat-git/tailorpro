@@ -316,7 +316,7 @@ export default function HomePage() {
                 textTransform: "uppercase",
               }}
             >
-              ✦ &nbsp; Welcome to Tailor Pro &nbsp; ✦
+              ✦ &nbsp; Welcome to Elanza - From Fabric to Form &nbsp; ✦
             </span>
           </div>
 
@@ -409,7 +409,7 @@ export default function HomePage() {
             </h2>
             <div className="gold-rule" style={{ marginBottom: 28 }} />
             <p style={{ fontSize: 15, color: "#666", lineHeight: 1.9, marginBottom: 20 }}>
-              Founded in the heart of Srinagar, Tailor Pro was built on a single belief: that
+              Founded in the heart of Srinagar, Elanza - From Fabric to Form was built on a single belief: that
               clothing should be crafted precisely for the person who wears it. Not off a rack,
               not in bulk. Just for you.
             </p>
@@ -1140,8 +1140,8 @@ export default function HomePage() {
                 </div>
                 {/* App UI elements */}
                 <div style={{ position: "absolute", top: 56, left: 16, right: 16, zIndex: 5 }}>
-                  <div style={{ fontSize: 8, letterSpacing: "0.15em", color: "rgba(255,255,255,0.6)", fontWeight: 700 }}>TAILOR PRO</div>
-                  <div style={{ fontSize: 10, color: "rgba(255,255,255,0.4)", marginTop: 2 }}>Kashmir&apos;s Finest</div>
+                  <div style={{ fontSize: 8, letterSpacing: "0.15em", color: "rgba(255,255,255,0.6)", fontWeight: 700 }}>ELANZA</div>
+                  <div style={{ fontSize: 7, letterSpacing: "0.1em", color: "rgba(255,255,255,0.4)", marginTop: 2 }}>From Fabric to Form</div>
                 </div>
                 {/* Bottom app label */}
                 <div style={{ position: "absolute", bottom: 20, left: 0, right: 0, textAlign: "center", zIndex: 5, padding: "0 16px" }}>

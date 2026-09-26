@@ -85,7 +85,7 @@ export default function DownloadPage() {
                 marginBottom: 20,
               }}
             >
-              TAILOR PRO APP
+              ELANZA - FROM FABRIC TO FORM APP
             </div>
             <h1
               className="font-serif"
@@ -99,7 +99,7 @@ export default function DownloadPage() {
             >
               The Full
               <br />
-              <span style={{ color: "#c9a84c" }}>Tailor Pro</span>
+              <span style={{ color: "#c9a84c" }}>Elanza - From Fabric to Form</span>
               <br />
               Experience
             </h1>
@@ -255,7 +255,7 @@ export default function DownloadPage() {
                     marginBottom: 4,
                   }}
                 >
-                  TAILOR PRO
+                  ELANZA
                 </div>
                 <div
                   className="font-serif"
@@ -384,7 +384,7 @@ export default function DownloadPage() {
               lineHeight: 1.8,
             }}
           >
-            Download Tailor Pro. It&apos;s free, it&apos;s fast, and your first consultation
+            Download Elanza - From Fabric to Form. It&apos;s free, it&apos;s fast, and your first consultation
             is on us.
           </p>
           <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
