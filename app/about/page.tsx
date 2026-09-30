@@ -408,7 +408,7 @@ export default function AboutPage() {
             Download the app and connect with our master artisans directly.
           </p>
           <Link href="/download" className="btn-gold">
-            Download Elanza - From Fabric to Form
+            Download Elanza App
           </Link>
         </div>
       </section>

@@ -387,15 +387,7 @@ export default function HomePage() {
           BRAND STATEMENT
       ══════════════════════════════════════════ */}
       <section style={{ background: "#fff" }}>
-        <div
-          className="section"
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gap: 80,
-            alignItems: "center",
-          }}
-        >
+        <div className="section brand-grid">
           <div>
             <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.18em", color: "#c9a84c", marginBottom: 16 }}>
               ✦ &nbsp; SINCE 1992 &nbsp; ✦
@@ -438,7 +430,7 @@ export default function HomePage() {
           </div>
 
           {/* Image collage */}
-          <div style={{ position: "relative", height: 500 }}>
+          <div className="brand-collage">
             {/* Top-left: tailor stitching — hands doing gold embroidery */}
             <div
               className="lift"

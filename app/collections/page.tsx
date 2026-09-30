@@ -282,6 +282,7 @@ export default function CollectionsPage() {
 
           {/* Banner Nudge */}
           <div
+            className="banner-nudge"
             style={{
               marginTop: 64,
               padding: "40px 32px",
@@ -318,8 +319,8 @@ export default function CollectionsPage() {
                 Filter by fabric, occasion, neckline, and embroidery pattern. Connect directly with master artisans inside the app.
               </p>
             </div>
-            <Link href="/download" className="btn-gold" style={{ flexShrink: 0 }}>
-              Download Elanza - From Fabric to Form App
+            <Link href="/download" className="btn-gold" style={{ textAlign: "center" }}>
+              Download Elanza App
             </Link>
           </div>
         </div>

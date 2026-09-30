@@ -446,7 +446,7 @@ export default function BridalPage() {
             senior designer.
           </p>
           <Link href="/download" className="btn-gold">
-            Download Elanza - From Fabric to Form
+            Download Elanza App
           </Link>
         </div>
       </section>
