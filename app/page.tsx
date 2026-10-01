@@ -431,7 +431,7 @@ export default function HomePage() {
 
           {/* Image collage */}
           <div className="brand-collage">
-            {/* Top-left: tailor stitching — hands doing gold embroidery */}
+            {/* Top-left: tailoring tools and measuring workspace */}
             <div
               className="lift"
               style={{
@@ -442,12 +442,12 @@ export default function HomePage() {
                 height: "65%",
                 borderRadius: 24,
                 overflow: "hidden",
-                backgroundImage: "url(/stitching-craft.jpg)",
+                backgroundImage: "url(/tailoring-table.jpg)",
                 backgroundSize: "cover",
-                backgroundPosition: "center 30%",
+                backgroundPosition: "center",
               }}
             />
-            {/* Bottom-right: ethnic Kashmiri anarkali portrait */}
+            {/* Bottom-right: tailor operating sewing machine */}
             <div
               className="lift"
               style={{
@@ -458,9 +458,9 @@ export default function HomePage() {
                 height: "65%",
                 borderRadius: 24,
                 overflow: "hidden",
-                backgroundImage: "url(/ethnic-wear.jpg)",
+                backgroundImage: "url(/sewing-machine.png)",
                 backgroundSize: "cover",
-                backgroundPosition: "center 15%",
+                backgroundPosition: "center",
               }}
             />
 
